@@ -21,7 +21,7 @@
     </nav>
     <main class="page-shell" id="main-content">
         <section class="hero card hero-split">
-            <div class="hero-copy-wrap">
+            <div class="hero-copy-wrap hero-copy-overlay">
                 <div class="eyebrow">Section 8 Registered Non-Profit</div>
                 <h1>Building stronger communities through action, dignity, and opportunity</h1>
                 <p class="hero-copy">
@@ -29,6 +29,7 @@
                     and environmental sustainability to create practical, lasting social impact across India.
                 </p>
                 <div class="hero-actions">
+                    <a href="volunteer.html#donate" class="btn donate">Donate Now</a>
                     <a href="about.html" class="btn primary">Explore Our Work</a>
                     <a href="initiatives.html" class="btn secondary">See Initiatives</a>
                 </div>
@@ -48,7 +49,12 @@
                 </div>
             </div>
             <div class="hero-visual" aria-label="Community impact visuals">
-                <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80" alt="Volunteers supporting a community event" class="visual-main">
+                <div class="visual-main-wrap">
+                    <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80" alt="Volunteers supporting a community event" class="visual-main">
+                    <div class="hero-tagline" aria-hidden="true">
+                        Together for People,<br>Animals, and the Planet
+                    </div>
+                </div>
                 <div class="visual-stack">
                     <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=500&q=80" alt="Children learning together" class="visual-thumb">
                     <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=500&q=80" alt="Nature and sustainability visual" class="visual-thumb">
@@ -56,18 +62,43 @@
             </div>
         </section>
 
-        <section class="card impact-strip" aria-label="Impact highlights">
-            <div>
-                <strong>6</strong>
-                <span>active project streams</span>
+        <!-- Impact counter dashboard -->
+        <section class="card counter-dashboard" aria-label="Live impact statistics">
+            <div class="counter-dashboard-header">
+                <div class="eyebrow">Impact Dashboard</div>
+                <h2>Numbers that tell the story</h2>
             </div>
-            <div>
-                <strong>6</strong>
-                <span>core focus areas</span>
-            </div>
-            <div>
-                <strong>1</strong>
-                <span>community-first mission</span>
+            <div class="counter-grid">
+                <div class="counter-tile">
+                    <span class="counter-icon" aria-hidden="true">🍱</span>
+                    <strong class="counter-num" data-target="500000" data-suffix="+">0</strong>
+                    <span>Meals distributed</span>
+                </div>
+                <div class="counter-tile">
+                    <span class="counter-icon" aria-hidden="true">🌱</span>
+                    <strong class="counter-num" data-target="15000" data-suffix="+">0</strong>
+                    <span>Saplings planted</span>
+                </div>
+                <div class="counter-tile">
+                    <span class="counter-icon" aria-hidden="true">🤝</span>
+                    <strong class="counter-num" data-target="30000" data-suffix="+">0</strong>
+                    <span>Volunteers engaged</span>
+                </div>
+                <div class="counter-tile">
+                    <span class="counter-icon" aria-hidden="true">👧</span>
+                    <strong class="counter-num" data-target="3200" data-suffix="+">0</strong>
+                    <span>Children in education</span>
+                </div>
+                <div class="counter-tile">
+                    <span class="counter-icon" aria-hidden="true">👩</span>
+                    <strong class="counter-num" data-target="1800" data-suffix="+">0</strong>
+                    <span>Women empowered</span>
+                </div>
+                <div class="counter-tile">
+                    <span class="counter-icon" aria-hidden="true">🐾</span>
+                    <strong class="counter-num" data-target="8500" data-suffix="+">0</strong>
+                    <span>Animals cared for</span>
+                </div>
             </div>
         </section>
 
@@ -137,29 +168,306 @@
             </div>
         </section>
 
-        <section class="card content-grid">
-            <div>
-                <div class="eyebrow">Community Outcomes</div>
+        <section class="card photo-gallery" aria-label="Impact visuals — volunteers and beneficiaries">
+            <div class="photo-gallery-header">
+                <div class="eyebrow">In the Field</div>
+                <h2>Moments of real impact</h2>
+                <p>Volunteers, beneficiaries, and communities — captured in action.</p>
+            </div>
+            <div class="photo-gallery-grid">
+                <figure class="photo-item photo-item--tall">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80" alt="Volunteers distributing food to families in need">
+                    <figcaption>Food relief — Project Seva</figcaption>
+                </figure>
+                <figure class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=700&q=80" alt="Children engaged in a classroom learning session">
+                    <figcaption>Education access — Project Bachpanshala</figcaption>
+                </figure>
+                <figure class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80" alt="Women in a skills training workshop">
+                    <figcaption>Skills training — Project Udaan</figcaption>
+                </figure>
+                <figure class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=700&q=80" alt="Volunteers planting saplings for environmental sustainability">
+                    <figcaption>Tree plantation — Project Prakriti</figcaption>
+                </figure>
+                <figure class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=700&q=80" alt="Animal rescue and feeding by volunteers">
+                    <figcaption>Animal care — Project Jeev</figcaption>
+                </figure>
+            </div>
+        </section>
+
+
+        <!-- Mission & Values -->
+        <section class="card mission-section" id="mission">
+            <div class="mission-header">
+                <div class="eyebrow">Mission &amp; Values</div>
                 <h2>Real change through sustained action</h2>
-                <p>
+                <p class="mission-lead">
                     The projects are built to reduce immediate hardship while creating a stronger foundation for
                     education, self-reliance, community health, and environmental responsibility.
-                </p>
-                <p>
                     When families receive support, children stay engaged in learning, women gain new skills,
                     animals are protected, and communities become more resilient over time.
                 </p>
             </div>
 
-            <div class="initiative-list">
-                <h3>Visual impact cues</h3>
-                <ul>
-                    <li><span>People</span>Meals, clothing, education, and livelihood support.</li>
-                    <li><span>Animals</span>Rescue, feeding, and ongoing care.</li>
-                    <li><span>Planet</span>Saplings, awareness, and sustainable practices.</li>
-                    <li><span>Partners</span>Volunteers and supporters expanding reach.</li>
-                </ul>
+            <!-- Impact icon pillars -->
+            <div class="mission-pillars" role="list">
+                <div class="mission-pillar" role="listitem">
+                    <div class="pillar-icon pillar-icon--people" aria-hidden="true">👥</div>
+                    <h3>People</h3>
+                    <p>Meals, clothing, education, and livelihood support for families and individuals in need.</p>
+                </div>
+                <div class="mission-pillar" role="listitem">
+                    <div class="pillar-icon pillar-icon--animals" aria-hidden="true">🐾</div>
+                    <h3>Animals</h3>
+                    <p>Rescue operations, daily feeding, and long-term care that build compassionate communities.</p>
+                </div>
+                <div class="mission-pillar" role="listitem">
+                    <div class="pillar-icon pillar-icon--planet" aria-hidden="true">🌍</div>
+                    <h3>Planet</h3>
+                    <p>Saplings, awareness drives, and sustainable practices to protect the environment we share.</p>
+                </div>
+                <div class="mission-pillar" role="listitem">
+                    <div class="pillar-icon pillar-icon--partners" aria-hidden="true">🤝</div>
+                    <h3>Partners</h3>
+                    <p>Volunteers, donors, and corporate supporters who multiply the reach of every initiative.</p>
+                </div>
             </div>
+        </section>
+
+        <!-- Testimonial carousel -->
+        <section class="card carousel-section" aria-label="Testimonials from volunteers and beneficiaries">
+            <div class="carousel-header">
+                <div>
+                    <div class="eyebrow">Voices of Impact</div>
+                    <h2>Heard from those who matter most</h2>
+                </div>
+                <div class="carousel-controls" role="group" aria-label="Testimonial navigation">
+                    <button class="carousel-btn" id="carousel-prev" aria-label="Previous testimonial">&#8592;</button>
+                    <button class="carousel-btn" id="carousel-next" aria-label="Next testimonial">&#8594;</button>
+                </div>
+            </div>
+
+            <div class="carousel-track-wrap" aria-live="polite">
+                <div class="carousel-track" id="carousel-track">
+
+                    <blockquote class="carousel-slide" aria-hidden="false">
+                        <div class="carousel-slide-inner">
+                            <div class="carousel-avatar">
+                                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=120&q=80" alt="Portrait of Priya Sharma">
+                            </div>
+                            <div class="carousel-body">
+                                <p class="carousel-quote">"Volunteering with Project Seva changed how I see community. Every meal we served was a reminder that small actions, done consistently, create real change."</p>
+                                <footer class="carousel-attribution">
+                                    <strong>Priya Sharma</strong>
+                                    <span>Volunteer — Project Seva, 2 years</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </blockquote>
+
+                    <blockquote class="carousel-slide" aria-hidden="true">
+                        <div class="carousel-slide-inner">
+                            <div class="carousel-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Portrait of Arjun Mehta">
+                            </div>
+                            <div class="carousel-body">
+                                <p class="carousel-quote">"The internship at InAmigos gave me hands-on experience I couldn't get anywhere else. I came to give my time — I left with a completely new perspective on purpose-driven work."</p>
+                                <footer class="carousel-attribution">
+                                    <strong>Arjun Mehta</strong>
+                                    <span>Intern — Project Vikas, 2023</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </blockquote>
+
+                    <blockquote class="carousel-slide" aria-hidden="true">
+                        <div class="carousel-slide-inner">
+                            <div class="carousel-avatar">
+                                <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?auto=format&fit=crop&w=120&q=80" alt="Portrait of Meena Patel">
+                            </div>
+                            <div class="carousel-body">
+                                <p class="carousel-quote">"Project Udaan helped me start my own small business. Now I teach other women the same skills. The foundation gave me a platform — I'm building on it every day."</p>
+                                <footer class="carousel-attribution">
+                                    <strong>Meena Patel</strong>
+                                    <span>Participant &amp; mentor — Project Udaan</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </blockquote>
+
+                    <blockquote class="carousel-slide" aria-hidden="true">
+                        <div class="carousel-slide-inner">
+                            <div class="carousel-avatar">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Portrait of Sunita Verma">
+                            </div>
+                            <div class="carousel-body">
+                                <p class="carousel-quote">"Seeing the rescued animals recover and find care — it reminds me why we do this. Project Jeev has made our community more compassionate, one small act at a time."</p>
+                                <footer class="carousel-attribution">
+                                    <strong>Sunita Verma</strong>
+                                    <span>Animal welfare volunteer — Project Jeev</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </blockquote>
+
+                    <blockquote class="carousel-slide" aria-hidden="true">
+                        <div class="carousel-slide-inner">
+                            <div class="carousel-avatar">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80" alt="Portrait of Rajesh Kumar">
+                            </div>
+                            <div class="carousel-body">
+                                <p class="carousel-quote">"Through Project Bachpanshala I learned to read and use a computer. My teacher said I was her best student. I want to become an engineer someday."</p>
+                                <footer class="carousel-attribution">
+                                    <strong>Rajesh Kumar</strong>
+                                    <span>Student — Project Bachpanshala</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </blockquote>
+
+                </div>
+            </div>
+
+            <div class="carousel-dots" role="tablist" aria-label="Testimonial slides" id="carousel-dots"></div>
+        </section>
+
+        <!-- Partnerships -->
+        <section class="card partnerships-section" aria-label="Our partners and supporters">
+            <div class="partnerships-header">
+                <div>
+                    <div class="eyebrow">Partners &amp; Supporters</div>
+                    <h2>Together we go further</h2>
+                    <p>We collaborate with corporate partners, government bodies, and NGOs who share our commitment to community impact.</p>
+                </div>
+                <a href="mailto:inamigosfoundation@gmail.com?subject=Partnership%20Enquiry" class="btn secondary">Become a Partner</a>
+            </div>
+
+            <div class="partner-logo-grid" aria-label="Partner organisations">
+                <div class="partner-tile">
+                    <div class="partner-logo-wrap" aria-hidden="true">
+                        <span class="partner-abbr">TCS</span>
+                    </div>
+                    <span class="partner-name">Tata Consultancy Services</span>
+                    <span class="partner-type">CSR Partner</span>
+                </div>
+                <div class="partner-tile">
+                    <div class="partner-logo-wrap" aria-hidden="true">
+                        <span class="partner-abbr">NITI</span>
+                    </div>
+                    <span class="partner-name">NITI Aayog</span>
+                    <span class="partner-type">Government Body</span>
+                </div>
+                <div class="partner-tile">
+                    <div class="partner-logo-wrap" aria-hidden="true">
+                        <span class="partner-abbr">GFI</span>
+                    </div>
+                    <span class="partner-name">Give Foundation India</span>
+                    <span class="partner-type">NGO Partner</span>
+                </div>
+                <div class="partner-tile">
+                    <div class="partner-logo-wrap" aria-hidden="true">
+                        <span class="partner-abbr">CG</span>
+                    </div>
+                    <span class="partner-name">Govt. of Chhattisgarh</span>
+                    <span class="partner-type">Government Partner</span>
+                </div>
+                <div class="partner-tile">
+                    <div class="partner-logo-wrap" aria-hidden="true">
+                        <span class="partner-abbr">INF</span>
+                    </div>
+                    <span class="partner-name">India NGO Forum</span>
+                    <span class="partner-type">Network Member</span>
+                </div>
+                <div class="partner-tile">
+                    <div class="partner-logo-wrap" aria-hidden="true">
+                        <span class="partner-abbr">ISO</span>
+                    </div>
+                    <span class="partner-name">ISO 9001:2015 Certified</span>
+                    <span class="partner-type">Quality Standard</span>
+                </div>
+            </div>
+
+            <p class="partner-disclaimer">Partner logos shown for illustrative purposes. Replace with official assets once partnership agreements are formalised.</p>
+        </section>
+
+        <!-- Social feed -->
+        <section class="card social-feed-section" aria-label="Latest from Instagram">
+            <div class="social-feed-header">
+                <div>
+                    <div class="eyebrow">Latest from Instagram</div>
+                    <h2>Follow our work in real time</h2>
+                    <p>Stay updated as our volunteers and teams share moments from the field every week.</p>
+                </div>
+                <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="btn primary">
+                    <span aria-hidden="true">📷</span> Follow @inamigos
+                </a>
+            </div>
+
+            <div class="social-feed-grid" aria-label="Recent Instagram posts">
+                <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="social-post" aria-label="Food distribution drive — Project Seva">
+                    <div class="social-post-img">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=400&q=75" alt="Volunteers distributing food parcels during Project Seva drive" loading="lazy">
+                        <div class="social-post-overlay">
+                            <span class="social-post-likes" aria-label="247 likes">❤ 247</span>
+                        </div>
+                    </div>
+                    <p class="social-post-caption">Another successful food distribution drive in Raipur 🍱 Every meal is a step toward dignity. #ProjectSeva #InAmigos</p>
+                </a>
+                <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="social-post" aria-label="Children's learning session — Project Bachpanshala">
+                    <div class="social-post-img">
+                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=400&q=75" alt="Children participating in a digital literacy session" loading="lazy">
+                        <div class="social-post-overlay">
+                            <span class="social-post-likes" aria-label="189 likes">❤ 189</span>
+                        </div>
+                    </div>
+                    <p class="social-post-caption">Curiosity is the best teacher 📚 Our Bachpanshala kids are exploring digital skills this week. #Education #FutureLeaders</p>
+                </a>
+                <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="social-post" aria-label="Tree plantation drive — Project Prakriti">
+                    <div class="social-post-img">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=75" alt="Volunteers planting saplings during a Prakriti drive" loading="lazy">
+                        <div class="social-post-overlay">
+                            <span class="social-post-likes" aria-label="312 likes">❤ 312</span>
+                        </div>
+                    </div>
+                    <p class="social-post-caption">300 volunteers. 2,000 saplings. One afternoon. 🌱 Our biggest Prakriti drive yet! #GreenIndia #ProjectPrakriti</p>
+                </a>
+                <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="social-post" aria-label="Women's skills workshop — Project Udaan">
+                    <div class="social-post-img">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=400&q=75" alt="Women in a tailoring and skills workshop" loading="lazy">
+                        <div class="social-post-overlay">
+                            <span class="social-post-likes" aria-label="274 likes">❤ 274</span>
+                        </div>
+                    </div>
+                    <p class="social-post-caption">Skills that last a lifetime 🌸 Meet the incredible women of this month's Udaan workshop. #WomenEmpowerment #Udaan</p>
+                </a>
+                <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="social-post" aria-label="Animal rescue — Project Jeev">
+                    <div class="social-post-img">
+                        <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=400&q=75" alt="Volunteer caring for a rescued animal" loading="lazy">
+                        <div class="social-post-overlay">
+                            <span class="social-post-likes" aria-label="401 likes">❤ 401</span>
+                        </div>
+                    </div>
+                    <p class="social-post-caption">Every life matters 🐾 Tommy is recovering well thanks to our amazing Jeev volunteers. #ProjectJeev #AnimalWelfare</p>
+                </a>
+                <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="social-post" aria-label="Youth skill training — Project Vikas">
+                    <div class="social-post-img">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=400&q=75" alt="Young participants in a skill development session" loading="lazy">
+                        <div class="social-post-overlay">
+                            <span class="social-post-likes" aria-label="156 likes">❤ 156</span>
+                        </div>
+                    </div>
+                    <p class="social-post-caption">The next batch of Vikas graduates is ready for the world 🚀 85% placement rate this quarter! #ProjectVikas #YouthDevelopment</p>
+                </a>
+            </div>
+
+            <p class="social-feed-note">
+                This is a static preview. To embed a live Instagram feed, replace this section with an
+                <a href="https://embedsocial.com" target="_blank" rel="noreferrer">EmbedSocial</a> or
+                <a href="https://elfsight.com" target="_blank" rel="noreferrer">Elfsight</a> widget once your Instagram account is connected.
+            </p>
         </section>
 
         <section class="card impact-band">
@@ -168,20 +476,72 @@
                 Volunteer, support, or partner with us to help more communities access care, dignity, and opportunity.
                 Every contribution strengthens the reach and sustainability of our programs.
             </p>
-            <div class="hero-actions">
-                <a href="volunteer.html" class="btn primary">Volunteer / Support</a>
-                <a href="initiatives.html" class="btn secondary">See Project Details</a>
+            <div class="impact-band-actions">
+                <a href="volunteer.html#donate" class="btn btn-band-donate">
+                    <span aria-hidden="true">❤️</span> Donate Now
+                </a>
+                <a href="volunteer.html" class="btn btn-band-volunteer">
+                    <span aria-hidden="true">🙌</span> Become a Volunteer
+                </a>
+                <a href="initiatives.html" class="btn btn-band-learn">
+                    <span aria-hidden="true">📖</span> See All Projects
+                </a>
             </div>
         </section>
     </main>
     <footer class="site-footer">
-        <div class="social-links" aria-label="Social media links">
-            <a href="https://www.facebook.com/inamigos" target="_blank" rel="noreferrer">Facebook</a>
-            <a href="https://www.twitter.com/InamigosF" target="_blank" rel="noreferrer">Twitter</a>
-            <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer">Instagram</a>
-            <a href="https://www.linkedin.com/company/inamigos-foundation" target="_blank" rel="noreferrer">linkedin</a>
+        <div class="footer-inner">
+            <!-- Newsletter -->
+            <div class="footer-col footer-newsletter">
+                <h3 class="footer-heading">Stay in the loop</h3>
+                <p class="footer-tagline">Get monthly updates on our projects, events, and impact stories.</p>
+                <form class="newsletter-form" id="newsletter-form" novalidate aria-label="Newsletter signup">
+                    <div class="newsletter-field-wrap">
+                        <label for="nl-email-index" class="sr-only">Email address</label>
+                        <input type="email" id="nl-email-index" name="email" class="newsletter-input"
+                            placeholder="your@email.com" autocomplete="email" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </div>
+                    <p class="newsletter-msg" aria-live="polite" hidden></p>
+                </form>
+            </div>
+            <!-- Quick links -->
+            <div class="footer-col footer-links">
+                <h3 class="footer-heading">Quick links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="initiatives.html">Initiatives</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="volunteer.html#donate">Donate</a></li>
+                </ul>
+            </div>
+            <!-- Social + contact -->
+            <div class="footer-col footer-social-col">
+                <h3 class="footer-heading">Follow us</h3>
+                <div class="footer-social-links" aria-label="Social media links">
+                    <a href="https://www.facebook.com/inamigos" target="_blank" rel="noreferrer" aria-label="Facebook">
+                        <span aria-hidden="true">f</span> Facebook
+                    </a>
+                    <a href="https://www.twitter.com/InamigosF" target="_blank" rel="noreferrer" aria-label="Twitter">
+                        <span aria-hidden="true">𝕏</span> Twitter
+                    </a>
+                    <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" aria-label="Instagram">
+                        <span aria-hidden="true">◎</span> Instagram
+                    </a>
+                    <a href="https://www.linkedin.com/company/inamigos-foundation" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                        <span aria-hidden="true">in</span> LinkedIn
+                    </a>
+                </div>
+                <a href="mailto:inamigosfoundation@gmail.com" class="footer-email">inamigosfoundation@gmail.com</a>
+            </div>
         </div>
-        <p>&copy; 2026 InAmigos Foundation. All rights reserved.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2026 InAmigos Foundation. All rights reserved.</p>
+            <p>Section 8 Registered &middot; 80G &amp; 12A Certified &middot; ISO 9001:2015</p>
+        </div>
     </footer>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

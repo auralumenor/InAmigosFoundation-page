@@ -95,4 +95,67 @@ All design tokens are defined as CSS custom properties in `:root` inside `style.
 - Facebook: [facebook.com/inamigos](https://www.facebook.com/inamigos)
 - Twitter: [twitter.com/InamigosF](https://www.twitter.com/InamigosF)
 - Instagram: [instagram.com/inamigos](https://www.instagram.com/inamigos)
+- LinkedIn: [linkedin.com/company/inamigos-foundation](https://www.linkedin.com/company/inamigos-foundation)
 - Volunteer form: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScAgWgiWEjMm5N5HO9f-kF5_MNCsFu0AjfF9-sFnWGYdJG7Jg/viewform)
+
+---
+
+## Newsletter signup
+
+The footer on every page includes a newsletter subscription form. It submits to [Formspree](https://formspree.io) — a free, static-site-friendly form backend that requires no server.
+
+**To activate it:**
+
+1. Create a free account at [formspree.io](https://formspree.io)
+2. Create a new form and copy the form ID (looks like `xabc1234`)
+3. In `main.js`, replace `YOUR_FORM_ID` in the fetch URL:
+
+```js
+// Before
+'https://formspree.io/f/YOUR_FORM_ID'
+
+// After
+'https://formspree.io/f/xabc1234'
+```
+
+Formspree will forward submissions to the email address on your account. The free tier allows 50 submissions/month.
+
+---
+
+## Social feed
+
+The homepage includes a static Instagram-style photo feed (`social-feed-section`) as a visual placeholder. It does not fetch live data.
+
+**To replace it with a real live feed:**
+
+Option A — **EmbedSocial** (recommended, free tier available):
+1. Sign up at [embedsocial.com](https://embedsocial.com)
+2. Connect your Instagram Business account
+3. Copy the embed `<div>` + `<script>` snippet they provide
+4. Replace the entire `.social-feed-grid` div in `index.html` with the EmbedSocial widget code
+
+Option B — **Elfsight**:
+1. Sign up at [elfsight.com](https://elfsight.com)
+2. Build an Instagram Feed widget and copy the embed code
+3. Same replacement as above — swap `.social-feed-grid` for the widget div
+
+Option C — **Instagram Basic Display API** (self-hosted, requires developer setup):
+- Requires a Facebook Developer App, access token management, and a small backend or serverless function to refresh tokens
+- Not recommended for a purely static site without a deployment pipeline
+
+---
+
+## Partnerships
+
+Partner tiles on the homepage use abbreviated placeholder logos. To add real partner logos:
+
+1. Add SVG or PNG assets to a `/assets/partners/` directory
+2. Replace the `.partner-logo-wrap` contents with `<img>` tags:
+
+```html
+<div class="partner-logo-wrap">
+  <img src="assets/partners/tcs.svg" alt="Tata Consultancy Services logo" width="40">
+</div>
+```
+
+Keep images under 20 KB each (SVG preferred for crispness at any size).

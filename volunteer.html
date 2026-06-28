@@ -21,7 +21,7 @@
     </nav>
     <main class="page-shell" id="main-content">
         <section class="hero card hero-split">
-            <div class="hero-copy-wrap">
+            <div class="hero-copy-wrap hero-copy-overlay">
                 <div class="eyebrow">Volunteer & Support</div>
                 <h1>Join us in creating meaningful change</h1>
                 <p class="hero-copy">
@@ -109,7 +109,7 @@
             </div>
         </section>
 
-        <section class="card impact-band">
+        <section class="card impact-band" id="donate">
             <h2>Ready to take part?</h2>
             <p>
                 Send us a message if you want to volunteer, donate, or build a partnership with InAmigos Foundation.
@@ -121,12 +121,47 @@
         </section>
     </main>
     <footer class="site-footer">
-        <div class="social-links" aria-label="Social media links">
-            <a href="https://www.facebook.com/inamigos" target="_blank" rel="noreferrer">Facebook</a>
-            <a href="https://www.twitter.com/InamigosF" target="_blank" rel="noreferrer">Twitter</a>
-            <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer">Instagram</a>
+        <div class="footer-inner">
+            <div class="footer-col footer-newsletter">
+                <h3 class="footer-heading">Stay in the loop</h3>
+                <p class="footer-tagline">Get monthly updates on our projects, events, and impact stories.</p>
+                <form class="newsletter-form" id="newsletter-form" novalidate aria-label="Newsletter signup">
+                    <div class="newsletter-field-wrap">
+                        <label for="nl-email-volunteer" class="sr-only">Email address</label>
+                        <input type="email" id="nl-email-volunteer" name="email" class="newsletter-input"
+                            placeholder="your@email.com" autocomplete="email" required>
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </div>
+                    <p class="newsletter-msg" aria-live="polite" hidden></p>
+                </form>
+            </div>
+            <div class="footer-col footer-links">
+                <h3 class="footer-heading">Quick links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="initiatives.html">Initiatives</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="volunteer.html#donate">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-social-col">
+                <h3 class="footer-heading">Follow us</h3>
+                <div class="footer-social-links" aria-label="Social media links">
+                    <a href="https://www.facebook.com/inamigos" target="_blank" rel="noreferrer" aria-label="Facebook"><span aria-hidden="true">f</span> Facebook</a>
+                    <a href="https://www.twitter.com/InamigosF" target="_blank" rel="noreferrer" aria-label="Twitter"><span aria-hidden="true">𝕏</span> Twitter</a>
+                    <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" aria-label="Instagram"><span aria-hidden="true">◎</span> Instagram</a>
+                    <a href="https://www.linkedin.com/company/inamigos-foundation" target="_blank" rel="noreferrer" aria-label="LinkedIn"><span aria-hidden="true">in</span> LinkedIn</a>
+                </div>
+                <a href="mailto:inamigosfoundation@gmail.com" class="footer-email">inamigosfoundation@gmail.com</a>
+            </div>
         </div>
-        <p>&copy; 2026 InAmigos Foundation. All rights reserved.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2026 InAmigos Foundation. All rights reserved.</p>
+            <p>Section 8 Registered &middot; 80G &amp; 12A Certified &middot; ISO 9001:2015</p>
+        </div>
     </footer>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
