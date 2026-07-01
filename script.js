@@ -140,6 +140,9 @@ const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   /* Auto-tag every .card with data-reveal so we don't have to
      touch the HTML manually.                                  */
   document.querySelectorAll('.card').forEach((el) => {
+    /* Exclude timeline card — it has its own per-item animation
+       and double-hiding causes items to stay invisible.       */
+    if (el.classList.contains('about-timeline')) return;
     if (!el.hasAttribute('data-reveal') && !el.closest('[data-reveal]')) {
       el.setAttribute('data-reveal', '');
     }
@@ -447,26 +450,33 @@ const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* ------------------------------------------------------------
    8. Timeline item slide-in
-   Each .timeline-item slides in from the right with increasing
+   Each .timeline-item slides in from the right with staggered
    delay as the timeline scrolls into view.
+
+   Strategy: items start opacity:1 in CSS (safe default).
+   JS hides them only AFTER attaching observers, so there's
+   no window where items are hidden but unobserved.
    ------------------------------------------------------------ */
 (function initTimeline() {
-  const items = document.querySelectorAll('.timeline-item');
+  const items = Array.from(document.querySelectorAll('.timeline-item'));
   if (!items.length) return;
-
   if (REDUCED) return;
+  if (!('IntersectionObserver' in window)) return;
 
+  /* Inject animation styles */
   const style = document.createElement('style');
   style.textContent = `
-    .timeline-item {
+    .timeline-item.tl-hidden {
       opacity: 0;
-      transform: translateX(20px);
-      transition: opacity 0.5s cubic-bezier(0.22,1,0.36,1),
-                  transform 0.5s cubic-bezier(0.22,1,0.36,1);
+      transform: translateX(28px);
+      transition: opacity 0.55s cubic-bezier(0.22,1,0.36,1),
+                  transform 0.55s cubic-bezier(0.22,1,0.36,1);
     }
-    .timeline-item.revealed {
-      opacity: 1;
-      transform: none;
+    .timeline-item.tl-visible {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: opacity 0.55s cubic-bezier(0.22,1,0.36,1),
+                  transform 0.55s cubic-bezier(0.22,1,0.36,1);
     }
   `;
   document.head.appendChild(style);
@@ -476,15 +486,24 @@ const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
         const item  = entry.target;
-        const index = Array.from(items).indexOf(item);
-        setTimeout(() => item.classList.add('revealed'), index * 80);
+        const index = items.indexOf(item);
+        setTimeout(() => {
+          item.classList.remove('tl-hidden');
+          item.classList.add('tl-visible');
+        }, index * 100);
         observer.unobserve(item);
       });
     },
-    { threshold: 0.15, rootMargin: '0px 0px -20px 0px' }
+    /* Lower threshold + no bottom margin so items near the
+       fold are caught even on short viewports               */
+    { threshold: 0.05, rootMargin: '0px 0px 0px 0px' }
   );
 
-  items.forEach((item) => observer.observe(item));
+  /* Hide items AFTER observers are attached — zero gap      */
+  items.forEach((item) => {
+    observer.observe(item);
+    item.classList.add('tl-hidden');
+  });
 })();
 
 
@@ -623,7 +642,7 @@ document.addEventListener('partialsReady', function onInteractive() {
      .card elements tilt toward the mouse on hover using
      CSS transforms (perspective). Resets smoothly on mouseleave.
      Disabled on touch devices and reduced-motion.
-     ---------------------------------------------------------- */
+     ---------------------------------------------------------- 
   (function initCardTilt() {
     if (REDUCED) return;
     if (window.matchMedia('(hover: none)').matches) return; // touch device
@@ -647,6 +666,7 @@ document.addEventListener('partialsReady', function onInteractive() {
 
     document.querySelectorAll('.card').forEach((card) => {
       /* Skip very tall cards — tilt looks odd on them       */
+      /*
       if (card.classList.contains('impact-band')) return;
       if (card.classList.contains('counter-dashboard')) return;
 
@@ -670,7 +690,7 @@ document.addEventListener('partialsReady', function onInteractive() {
       });
     });
   })();
-
+*/
 
   /* ----------------------------------------------------------
      13. Magnetic buttons

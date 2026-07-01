@@ -53,10 +53,10 @@ Work_1/
 
 ## Running locally
 
-Open any `.html` file directly in a browser — no server required.
+Open the site through a local server so the shared header and footer partials can load correctly.
 
 ```bash
-# Optional: serve with any static server
+# Serve with any static server
 npx serve .
 # or
 python -m http.server 8080

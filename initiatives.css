@@ -1,0 +1,293 @@
+
+.project-showcase {
+  padding: clamp(28px, 4vw, 44px);
+  display: grid;
+  gap: 28px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-end;
+}
+
+.section-heading > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-heading h2 {
+  margin: 0;
+}
+
+.section-heading p {
+  max-width: 44ch;
+  margin: 0;
+}
+
+.initiative-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+/* ------------------------------------------------------------
+   14a. Initiative cards (initiatives page)
+   ------------------------------------------------------------ */
+
+.initiative-card {
+  min-width: 0;
+  border-radius: var(--radius-inner);
+  border: 1px solid rgba(138, 90, 43, 0.12);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base);
+}
+
+.initiative-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Photo header */
+.initiative-card-photo {
+  position: relative;
+  height: 180px;
+}
+
+.initiative-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s var(--ease-out);
+}
+
+.initiative-card:hover .initiative-card-photo img {
+  transform: scale(1.04);
+}
+
+.initiative-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s var(--ease-out);
+}
+
+.initiative-card:hover .initiative-card-photo img {
+  transform: scale(1.05);
+}
+
+.initiative-icon {
+  position: absolute;
+  bottom: -16px;
+  left: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+/* Body */
+.initiative-card-body {
+  padding: 28px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.initiative-card-body h3 {
+  color: var(--accent-dark);
+  font-size: 1.1rem;
+}
+
+.initiative-card-body p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 840px) {
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Stats row */
+.initiative-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.initiative-stat strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--green);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.initiative-stat span {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+/* Progress bar */
+.initiative-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.initiative-progress-bar {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(138, 90, 43, 0.1);
+  overflow: hidden;
+}
+
+.initiative-progress-fill {
+  height: 100%;
+  width: var(--fill, 0%);
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--green), #4caf50);
+  transition: width 0.8s var(--ease-out);
+}
+
+.initiative-progress span {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* CTA button — solid accent, fills to dark on hover */
+.btn.initiative-cta {
+  margin-top: auto;
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  font-size: 0.85rem;
+  min-height: 40px;
+  align-self: flex-start;
+  padding: 0 18px;
+  box-shadow: 0 3px 10px rgba(138, 90, 43, 0.25);
+}
+
+.btn.initiative-cta:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+  box-shadow: 0 5px 16px rgba(99, 64, 33, 0.32);
+}
+
+@media (max-width: 560px) {
+  .project-showcase {
+    gap: 22px;
+  }
+
+  .initiative-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .initiative-card-photo {
+    height: 200px;
+  }
+}
+
+/* ------------------------------------------------------------
+   16j. Case study panels
+   ------------------------------------------------------------ */
+.case-study {
+  margin-top: 4px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+.case-study-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 6px 0;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  gap: 8px;
+  transition: color var(--dur-fast);
+}
+
+.case-study-toggle:hover { color: var(--accent-dark); }
+
+.case-study-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.case-study-chevron {
+  font-size: 1rem;
+  display: inline-block;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.case-study-toggle[aria-expanded="true"] .case-study-chevron {
+  transform: rotate(180deg);
+}
+
+.case-study-body {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s var(--ease-out), opacity 0.3s;
+  opacity: 0;
+}
+
+/* JS removes `hidden` and adds `open` */
+.case-study-body.open {
+  max-height: 600px; /* large enough for any content */
+  opacity: 1;
+}
+
+.case-study-photo {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  max-height: 160px;
+  margin: 10px 0 10px;
+  border: 1px solid rgba(138, 90, 43, 0.1);
+}
+
+.case-study-text {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+
+.case-study-text strong { color: var(--accent-dark); }
+

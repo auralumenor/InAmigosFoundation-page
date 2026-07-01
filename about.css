@@ -1,0 +1,435 @@
+/* ------------------------------------------------------------
+   16b. About page — shared header
+   ------------------------------------------------------------ */
+.about-highlights-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.about-highlights-header h2 {
+  margin: 0;
+}
+
+.about-highlights-header p {
+  max-width: 58ch;
+}
+
+/* ------------------------------------------------------------
+   16c. Infographic highlights grid
+   ------------------------------------------------------------ */
+.about-highlights {
+  padding: clamp(28px, 4vw, 44px);
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.highlight-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 22px 16px;
+  border-radius: var(--radius-inner);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.96), rgba(255, 248, 239, 0.88));
+  border: 1px solid rgba(138, 90, 43, 0.1);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base);
+}
+
+.highlight-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.highlight-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.highlight-tile strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  color: var(--green);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.highlight-tile span {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+/* ------------------------------------------------------------
+   16d. Timeline
+   ------------------------------------------------------------ */
+.about-timeline {
+  padding: clamp(28px, 4vw, 44px);
+}
+
+.about-timeline .about-highlights-header {
+  margin-bottom: 32px;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/*
+  Spine — a 2px vertical line.
+  The marker column is 120px wide. The dot sits at the
+  right edge of that column. The spine must pass through
+  the same point: left = 120px, centered with translateX(-50%).
+*/
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 120px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(138, 90, 43, 0.25) 6%,
+    rgba(41, 102, 66, 0.35) 94%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* Each row: fixed label column + fluid content column */
+.timeline-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 0 28px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+  /* JS adds .tl-visible; CSS handles the animation */
+}
+
+.timeline-item:first-child { padding-top: 0; }
+.timeline-item:last-child  { border-bottom: none; padding-bottom: 0; }
+
+/* Year label */
+.timeline-marker {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  /* right-pad to 14px from the column edge so text clears the dot */
+  padding: 2px 22px 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  position: relative;
+  white-space: nowrap;
+}
+
+/*
+  Dot — sits exactly at left: 120px on the spine.
+  Position relative to the .timeline-item (not the marker).
+  Left = marker column width (120px) − half dot width (5px) = 115px.
+  We use position: absolute on the marker and align to its right edge.
+*/
+.timeline-marker::after {
+  content: "";
+  position: absolute;
+  /* Right edge of marker column = right: 0 on the marker element.
+     Offset by half a dot to center it on the spine.             */
+  right: -5px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg, #f4efe6);
+  box-shadow: 0 0 0 2px var(--accent);
+  z-index: 1;
+}
+
+/* Current milestone — bigger green dot with glow ring */
+.timeline-item--current .timeline-marker {
+  color: var(--green-dark);
+}
+
+.timeline-item--current .timeline-marker::after {
+  right: -7px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  background: var(--green);
+  border-color: var(--bg, #f4efe6);
+  box-shadow:
+    0 0 0 2px var(--green),
+    0 0 0 5px rgba(41, 102, 66, 0.18);
+}
+
+/* Content */
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 0;
+}
+
+.timeline-content h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.timeline-content p {
+  font-size: 0.88rem;
+  line-height: 1.75;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* JS animation classes — items slide in from right on scroll */
+.timeline-item {
+  opacity: 1; /* default visible — JS overrides if supported */
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-item {
+    grid-template-columns: 48px 1fr;
+    gap: 0 14px;
+    padding: 18px 0;
+  }
+
+  .timeline-marker {
+    padding-right: 8px;
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+  }
+
+  .timeline-marker::after {
+    display: none;
+  }
+}
+
+
+/* ------------------------------------------------------------
+   16e. Volunteer stories
+   ------------------------------------------------------------ */
+.about-stories {
+  padding: clamp(28px, 4vw, 44px);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.story-card {
+  border-radius: var(--radius-inner);
+  border: 1px solid rgba(138, 90, 43, 0.1);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base);
+}
+
+.story-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.story-photo {
+  height: 200px;
+  overflow: hidden;
+}
+
+.story-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.5s var(--ease-out);
+}
+
+.story-card:hover .story-photo img {
+  transform: scale(1.04);
+}
+
+.story-body {
+  padding: 22px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.story-quote {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text);
+  font-style: italic;
+  position: relative;
+  padding-left: 18px;
+}
+
+.story-quote::before {
+  content: "\201C";
+  position: absolute;
+  left: 0;
+  top: -4px;
+  font-size: 2.2rem;
+  color: var(--accent);
+  line-height: 1;
+  font-style: normal;
+}
+
+.story-attribution {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.story-attribution strong {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.story-attribution span {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* ------------------------------------------------------------
+   16f. Credentials grid
+   ------------------------------------------------------------ */
+.about-credentials {
+  padding: clamp(28px, 4vw, 44px);
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.credential-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 22px 14px;
+  border-radius: var(--radius-inner);
+  background: linear-gradient(160deg, rgba(41, 102, 66, 0.04), rgba(255, 248, 239, 0.9));
+  border: 1px solid rgba(41, 102, 66, 0.12);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base);
+}
+
+.credential-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.credential-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.credential-badge strong {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  line-height: 1.3;
+}
+
+.credential-badge span {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+/* ------------------------------------------------------------
+   16g. Values grid
+   ------------------------------------------------------------ */
+.about-values {
+  padding: clamp(28px, 4vw, 44px);
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.value-card {
+  padding: 24px 20px;
+  border-radius: var(--radius-inner);
+  border: 1px solid rgba(138, 90, 43, 0.1);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(255, 248, 239, 0.88));
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base);
+}
+
+.value-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.value-card > span {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.value-card h3 {
+  font-size: 1rem;
+  color: var(--accent-dark);
+  margin: 0;
+}
+
+.value-card p {
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+

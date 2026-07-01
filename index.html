@@ -3,197 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InAmigos Foundation</title>
+    <title>Home - InAmigos Foundation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/style.css">
 </head>
 <body data-page="index">
     <div id="site-header"></div>
     <main class="page-shell" id="main-content">
-        <section class="hero card hero-split">
-            <div class="hero-copy-wrap hero-copy-overlay">
-                <div class="eyebrow">Section 8 Registered Non-Profit</div>
-                <h1>Building stronger communities through action, dignity, and opportunity</h1>
-                <p class="hero-copy">
-                    InAmigos Foundation works across food relief, education, women empowerment, animal welfare,
-                    and environmental sustainability to create practical, lasting social impact across India.
+        <section class="hero card hero-split p-[clamp(32px,5vw,60px)] grid gap-5 md:grid-cols-[minmax(0,1.1fr)_minmax(260px,0.9fr)] md:items-center md:gap-8 bg-[var(--color-card)] border border-[var(--color-line)] rounded-[var(--radius-card)] shadow-md backdrop-blur-[10px] max-md:grid-cols-1">
+            <div class="hero-copy-wrap hero-copy-overlay grid gap-5 z-10 relative">
+                <div class="eyebrow uppercase tracking-[0.18em] text-[0.75rem] text-[var(--color-accent)] font-sans font-bold">Section 8 Registered Non-Profit · Youth-Led NGO</div>
+                <h1 class="m-0 font-serif text-[var(--color-text)] text-[clamp(2.6rem,5.5vw,5rem)] leading-[1.02] tracking-[-0.02em] max-w-[13ch] max-md:text-[clamp(1.9rem,9vw,2.6rem)] max-md:leading-[1.1]">Building stronger communities through action, dignity, and opportunity</h1>
+                <p class="hero-copy m-0 text-[var(--color-muted)] font-sans text-[1.05rem] leading-[1.75] max-w-[58ch]">
+                    InAmigos Foundation is a youth-led NGO based in Bilaspur, Chhattisgarh, working across
+                    food relief, education, women empowerment, animal welfare, and environmental sustainability
+                    to create practical, lasting social impact.
                 </p>
-                <div class="hero-actions">
-                    <a href="volunteer.html#donate" class="btn donate">Donate Now</a>
-                    <a href="about.html" class="btn primary">Explore Our Work</a>
-                    <a href="initiatives.html" class="btn secondary">See Initiatives</a>
+                <div class="hero-actions flex flex-wrap gap-2.5 max-md:flex-col">
+                    <a href="https://rzp.io/l/kWQ87HP" class="btn donate inline-flex items-center justify-center gap-1.5 min-h-[46px] px-[22px] rounded-full border-[1.5px] border-transparent font-sans font-bold text-[0.9rem] tracking-[0.01em] cursor-pointer transition-all duration-150 hover:-translate-y-[2px] active:translate-y-0 bg-[var(--color-green)] text-white shadow-[0_4px_14px_rgba(41,102,66,0.36)] hover:bg-[var(--color-green-dark)] hover:shadow-[0_6px_20px_rgba(30,74,49,0.42)] max-md:w-full">Donate Now</a>
+                    <a href="volunteer.html" class="btn donate inline-flex items-center justify-center gap-1.5 min-h-[46px] px-[22px] rounded-full border-[1.5px] border-transparent font-sans font-bold text-[0.9rem] tracking-[0.01em] cursor-pointer transition-all duration-150 hover:-translate-y-[2px] active:translate-y-0 bg-[var(--color-accent-pale)] text-white shadow-[0_4px_14px_rgba(138,90,43,0.32)] hover:bg-[var(--color-accent-pale)] hover:shadow-[0_6px_20px_rgba(99,64,33,0.38)] max-md:w-full">Join Us</a>
+                    <a href="about.html" class="btn primary inline-flex items-center justify-center gap-1.5 min-h-[46px] px-[22px] rounded-full border-[1.5px] border-transparent font-sans font-bold text-[0.9rem] tracking-[0.01em] cursor-pointer transition-all duration-150 hover:-translate-y-[2px] active:translate-y-0 bg-[var(--color-accent)] text-white shadow-[0_4px_14px_rgba(138,90,43,0.32)] hover:bg-[var(--color-accent-dark)] hover:shadow-[0_6px_20px_rgba(99,64,33,0.38)] max-md:w-full">Explore Our Work</a>
+                    <a href="initiatives.html" class="btn secondary inline-flex items-center justify-center gap-1.5 min-h-[46px] px-[22px] rounded-full border-[1.5px] border-[var(--color-accent)] font-sans font-bold text-[0.9rem] tracking-[0.01em] cursor-pointer transition-all duration-150 hover:-translate-y-[2px] active:translate-y-0 bg-[rgba(255,255,255,0.72)] text-[var(--color-accent-dark)] shadow-[0_2px_8px_rgba(138,90,43,0.1)] hover:bg-[rgba(138,90,43,0.06)] hover:border-[var(--color-accent-dark)] hover:shadow-[0_4px_14px_rgba(138,90,43,0.18)] max-md:w-full">See Initiatives</a>
                 </div>
-                <div class="hero-meta">
-                    <div>
-                        <strong>Founded</strong>
-                        <span>September 23, 2020</span>
+                <div class="hero-meta mt-2 pt-[18px] border-t border-[var(--color-line)] grid grid-cols-3 gap-3 max-lg:grid-cols-1">
+                    <div class="flex flex-col gap-[2px]">
+                        <strong class="font-sans text-[0.7rem] uppercase tracking-[0.1em] text-[var(--color-muted)] font-bold">Founded</strong>
+                        <span class="font-serif text-[0.92rem] text-[var(--color-text)] leading-[1.3] font-medium">September 23, 2020</span>
                     </div>
-                    <div>
-                        <strong>Based in</strong>
-                        <span>Chhattisgarh, India</span>
+                    <div class="flex flex-col gap-[2px]">
+                        <strong class="font-sans text-[0.7rem] uppercase tracking-[0.1em] text-[var(--color-muted)] font-bold">Based in</strong>
+                        <span class="font-serif text-[0.92rem] text-[var(--color-text)] leading-[1.3] font-medium">Bilaspur, Chhattisgarh</span>
                     </div>
-                    <div>
-                        <strong>Accreditations</strong>
-                        <span>80G, 12A, CSR-1, NITI Aayog, ISO 9001:2015</span>
+                    <div class="flex flex-col gap-[2px]">
+                        <strong class="font-sans text-[0.7rem] uppercase tracking-[0.1em] text-[var(--color-muted)] font-bold">Accreditations</strong>
+                        <span class="font-serif text-[0.92rem] text-[var(--color-text)] leading-[1.3] font-medium">80G, 12A, CSR-1, NITI Aayog, ISO 9001:2015</span>
                     </div>
                 </div>
             </div>
-            <div class="hero-visual" aria-label="Community impact visuals">
-                <div class="visual-main-wrap">
-                    <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80" alt="Volunteers supporting a community event" class="visual-main">
-                    <div class="hero-tagline" aria-hidden="true">
+            <div class="hero-visual flex flex-col gap-3" aria-label="Community impact visuals">
+                <div class="visual-main-wrap relative rounded-2xl overflow-hidden shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80" alt="Volunteers supporting a community event" class="visual-main w-full h-auto aspect-[4/3] object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.02]">
+                    <div class="hero-tagline absolute bottom-0 left-0 right-0 p-5 pt-8 bg-gradient-to-t from-[rgba(0,0,0,0.65)] to-transparent text-white font-serif text-[1.1rem] leading-[1.25] text-shadow-[0_2px_4px_rgba(0,0,0,0.3)] pointer-events-none" aria-hidden="true">
                         Together for People,<br>Animals, and the Planet
                     </div>
                 </div>
-                <div class="visual-stack">
-                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=500&q=80" alt="Children learning together" class="visual-thumb">
-                    <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=500&q=80" alt="Nature and sustainability visual" class="visual-thumb">
+                <div class="visual-stack grid grid-cols-2 gap-3 max-md:grid-cols-1">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=500&q=80" alt="Children learning together" class="visual-thumb w-full h-[120px] object-cover rounded-xl shadow-md transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=500&q=80" alt="Nature and sustainability visual" class="visual-thumb w-full h-[120px] object-cover rounded-xl shadow-md transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 hover:shadow-lg">
                 </div>
             </div>
         </section>
 
         <!-- Impact counter dashboard -->
-        <section class="card counter-dashboard" aria-label="Live impact statistics">
-            <div class="counter-dashboard-header">
-                <div class="eyebrow">Impact Dashboard</div>
-                <h2>Numbers that tell the story</h2>
+        <section class="card counter-dashboard p-[clamp(28px,4vw,44px)] grid gap-7 bg-gradient-to-br from-[rgba(41,102,66,0.06)] to-[rgba(255,248,239,0.95)] bg-[var(--color-card)] border border-[var(--color-line)] rounded-[var(--radius-card)] shadow-md backdrop-blur-[10px]" aria-label="Live impact statistics">
+            <div class="counter-dashboard-header flex flex-col gap-1.5">
+                <div class="eyebrow uppercase tracking-[0.18em] text-[0.75rem] text-[var(--color-accent)] font-sans font-bold">Impact Dashboard</div>
+                <h2 class="m-0 font-serif text-[clamp(2rem,3.5vw,3rem)] leading-[1.08] tracking-[-0.02em] font-bold text-[var(--color-text)]">Numbers that tell the story</h2>
             </div>
-            <div class="counter-grid">
-                <div class="counter-tile">
-                    <span class="counter-icon" aria-hidden="true">🍱</span>
-                    <strong class="counter-num" data-target="500000" data-suffix="+">0</strong>
-                    <span>Meals distributed</span>
+            <div class="counter-grid grid grid-cols-2 md:grid-cols-4 gap-[14px]">
+                <div class="counter-tile flex flex-col items-center text-center gap-1.5 pt-[22px] px-3 pb-[18px] rounded-[var(--radius-inner)] bg-[rgba(255,255,255,0.82)] border border-[rgba(41,102,66,0.1)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md">
+                    <span class="counter-icon text-[1.8rem] leading-none mb-0.5" aria-hidden="true">🍱</span>
+                    <strong class="counter-num block font-serif text-[clamp(1.6rem,2.5vw,2.2rem)] text-[var(--color-green)] tracking-[-0.03em] leading-none font-bold transition-colors duration-300" data-target="500000" data-suffix="+">0</strong>
+                    <span class="font-sans text-[0.78rem] text-[var(--color-muted)] leading-[1.35]">Meals distributed</span>
                 </div>
-                <div class="counter-tile">
-                    <span class="counter-icon" aria-hidden="true">🌱</span>
-                    <strong class="counter-num" data-target="15000" data-suffix="+">0</strong>
-                    <span>Saplings planted</span>
+                <div class="counter-tile flex flex-col items-center text-center gap-1.5 pt-[22px] px-3 pb-[18px] rounded-[var(--radius-inner)] bg-[rgba(255,255,255,0.82)] border border-[rgba(41,102,66,0.1)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md">
+                    <span class="counter-icon text-[1.8rem] leading-none mb-0.5" aria-hidden="true">🌱</span>
+                    <strong class="counter-num block font-serif text-[clamp(1.6rem,2.5vw,2.2rem)] text-[var(--color-green)] tracking-[-0.03em] leading-none font-bold transition-colors duration-300" data-target="10000" data-suffix="+">0</strong>
+                    <span class="font-sans text-[0.78rem] text-[var(--color-muted)] leading-[1.35]">Trees planted</span>
                 </div>
-                <div class="counter-tile">
-                    <span class="counter-icon" aria-hidden="true">🤝</span>
-                    <strong class="counter-num" data-target="30000" data-suffix="+">0</strong>
-                    <span>Volunteers engaged</span>
+                <div class="counter-tile flex flex-col items-center text-center gap-1.5 pt-[22px] px-3 pb-[18px] rounded-[var(--radius-inner)] bg-[rgba(255,255,255,0.82)] border border-[rgba(41,102,66,0.1)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md">
+                    <span class="counter-icon text-[1.8rem] leading-none mb-0.5" aria-hidden="true">🤝</span>
+                    <strong class="counter-num block font-serif text-[clamp(1.6rem,2.5vw,2.2rem)] text-[var(--color-green)] tracking-[-0.03em] leading-none font-bold transition-colors duration-300" data-target="30000" data-suffix="+">0</strong>
+                    <span class="font-sans text-[0.78rem] text-[var(--color-muted)] leading-[1.35]">Interns &amp; volunteers</span>
                 </div>
-                <div class="counter-tile">
-                    <span class="counter-icon" aria-hidden="true">👧</span>
-                    <strong class="counter-num" data-target="3200" data-suffix="+">0</strong>
-                    <span>Children in education</span>
+                <div class="counter-tile flex flex-col items-center text-center gap-1.5 pt-[22px] px-3 pb-[18px] rounded-[var(--radius-inner)] bg-[rgba(255,255,255,0.82)] border border-[rgba(41,102,66,0.1)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md">
+                    <span class="counter-icon text-[1.8rem] leading-none mb-0.5" aria-hidden="true">👧</span>
+                    <strong class="counter-num block font-serif text-[clamp(1.6rem,2.5vw,2.2rem)] text-[var(--color-green)] tracking-[-0.03em] leading-none font-bold transition-colors duration-300" data-target="1000" data-suffix="+">0</strong>
+                    <span class="font-sans text-[0.78rem] text-[var(--color-muted)] leading-[1.35]">Children in education</span>
                 </div>
-                <div class="counter-tile">
-                    <span class="counter-icon" aria-hidden="true">👩</span>
-                    <strong class="counter-num" data-target="1800" data-suffix="+">0</strong>
-                    <span>Women empowered</span>
+                <div class="counter-tile flex flex-col items-center text-center gap-1.5 pt-[22px] px-3 pb-[18px] rounded-[var(--radius-inner)] bg-[rgba(255,255,255,0.82)] border border-[rgba(41,102,66,0.1)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md">
+                    <span class="counter-icon text-[1.8rem] leading-none mb-0.5" aria-hidden="true">👩</span>
+                    <strong class="counter-num block font-serif text-[clamp(1.6rem,2.5vw,2.2rem)] text-[var(--color-green)] tracking-[-0.03em] leading-none font-bold transition-colors duration-300" data-target="900" data-suffix="+">0</strong>
+                    <span class="font-sans text-[0.78rem] text-[var(--color-muted)] leading-[1.35]">Women empowered</span>
                 </div>
-                <div class="counter-tile">
-                    <span class="counter-icon" aria-hidden="true">🐾</span>
-                    <strong class="counter-num" data-target="8500" data-suffix="+">0</strong>
-                    <span>Animals cared for</span>
+                <div class="counter-tile flex flex-col items-center text-center gap-1.5 pt-[22px] px-3 pb-[18px] rounded-[var(--radius-inner)] bg-[rgba(255,255,255,0.82)] border border-[rgba(41,102,66,0.1)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md">
+                    <span class="counter-icon text-[1.8rem] leading-none mb-0.5" aria-hidden="true">📍</span>
+                    <strong class="counter-num block font-serif text-[clamp(1.6rem,2.5vw,2.2rem)] text-[var(--color-green)] tracking-[-0.03em] leading-none font-bold transition-colors duration-300" data-target="6" data-suffix="">0</strong>
+                    <span class="font-sans text-[0.78rem] text-[var(--color-muted)] leading-[1.35]">Active projects</span>
                 </div>
             </div>
         </section>
 
-        <section class="card content-grid" id="about">
-            <div>
-                <div class="eyebrow">Introduction</div>
-                <h2>About InAmigos Foundation</h2>
-                <p>
-                    Founded by Mr. Govind Shukla, InAmigos Foundation is committed to transparent,
-                    accountable, and high-quality service. We collaborate with volunteers, communities,
-                    and corporate partners to expand access to essentials and opportunity.
+        <section class="card content-grid p-[clamp(28px,4vw,44px)] grid md:grid-cols-[1.1fr_0.9fr] gap-8 items-start bg-[var(--color-card)] border border-[var(--color-line)] rounded-[var(--radius-card)] shadow-md backdrop-blur-[10px] max-md:grid-cols-1" id="about">
+            <div class="flex flex-col gap-3.5">
+                <div class="eyebrow uppercase tracking-[0.18em] text-[0.75rem] text-[var(--color-accent)] font-sans font-bold">Introduction</div>
+                <h2 class="m-0 mt-0 font-serif text-[clamp(2rem,3.5vw,3rem)] leading-[1.08] tracking-[-0.02em] font-bold text-[var(--color-text)]">About InAmigos Foundation</h2>
+                <p class="m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">
+                    Founded on September 23, 2020 by Mr. Govind Shukla (Founder &amp; CEO), InAmigos Foundation
+                    is a youth-led, Section 8 registered non-profit headquartered at Ward No. 5, Gram Post,
+                    Sipat Ujwal Nagar, Bilaspur, Chhattisgarh — Pin 495555.
                 </p>
-                <p>
-                    Our work focuses on food relief, education, women empowerment, animal welfare,
-                    environmental sustainability, and skill development.
+                <p class="m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">
+                    Operating across six flagship projects, the foundation is driven almost entirely by young
+                    volunteers and interns committed to delivering transparent, measurable community impact.
                 </p>
             </div>
 
-            <div class="initiative-list">
-                <h3>Why the projects matter</h3>
-                <ul>
-                    <li><span>Immediate relief</span>Meeting urgent needs with food, clothing, and care.</li>
-                    <li><span>Long-term growth</span>Building education and livelihood pathways.</li>
-                    <li><span>Inclusive support</span>Serving people, animals, and the environment together.</li>
-                    <li><span>Accountability</span>Working with measurable, transparent outcomes.</li>
+            <div class="initiative-list p-6 rounded-[var(--radius-inner)] bg-[rgba(255,248,239,0.82)] border border-[rgba(138,90,43,0.1)] shadow-sm">
+                <h3 class="m-0 mb-4 font-sans text-[1rem] uppercase tracking-[0.1em] font-bold text-[var(--color-accent-dark)]">Why the projects matter</h3>
+                <ul class="list-none p-0 m-0 grid gap-3">
+                    <li class="pl-3.5 border-l-2 border-[rgba(138,90,43,0.24)] font-sans text-[0.9rem] text-[var(--color-muted)] leading-[1.6]"><span class="block font-bold text-[var(--color-accent-dark)] text-[0.82rem] uppercase tracking-[0.06em] mb-0.5">Immediate relief</span>Meeting urgent needs with food, clothing, and care.</li>
+                    <li class="pl-3.5 border-l-2 border-[rgba(138,90,43,0.24)] font-sans text-[0.9rem] text-[var(--color-muted)] leading-[1.6]"><span class="block font-bold text-[var(--color-accent-dark)] text-[0.82rem] uppercase tracking-[0.06em] mb-0.5">Long-term growth</span>Building education and livelihood pathways.</li>
+                    <li class="pl-3.5 border-l-2 border-[rgba(138,90,43,0.24)] font-sans text-[0.9rem] text-[var(--color-muted)] leading-[1.6]"><span class="block font-bold text-[var(--color-accent-dark)] text-[0.82rem] uppercase tracking-[0.06em] mb-0.5">Inclusive support</span>Serving people, animals, and the environment together.</li>
+                    <li class="pl-3.5 border-l-2 border-[rgba(138,90,43,0.24)] font-sans text-[0.9rem] text-[var(--color-muted)] leading-[1.6]"><span class="block font-bold text-[var(--color-accent-dark)] text-[0.82rem] uppercase tracking-[0.06em] mb-0.5">Accountability</span>Working with measurable, transparent outcomes.</li>
                 </ul>
             </div>
         </section>
 
-        <section class="card project-showcase" id="initiatives">
-            <div class="section-heading">
-                <div>
-                    <div class="eyebrow">Ongoing Projects</div>
-                    <h2>Programs designed for real-world social impact</h2>
+        <section class="card project-showcase p-[clamp(28px,4vw,44px)] grid gap-7 bg-[var(--color-card)] border border-[var(--color-line)] rounded-[var(--radius-card)] shadow-md backdrop-blur-[10px]" id="initiatives">
+            <div class="section-heading flex justify-between gap-6 items-end max-md:flex-col max-md:items-start max-md:gap-2">
+                <div class="flex flex-col gap-2">
+                    <div class="eyebrow uppercase tracking-[0.18em] text-[0.75rem] text-[var(--color-accent)] font-sans font-bold">Ongoing Projects</div>
+                    <h2 class="m-0 font-serif text-[clamp(2rem,3.5vw,3rem)] leading-[1.08] tracking-[-0.02em] font-bold text-[var(--color-text)]">Programs designed for real-world social impact</h2>
                 </div>
-                <p>
+                <p class="max-w-[44ch] m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">
                     Each initiative addresses a specific need while contributing to a wider ecosystem of care,
                     resilience, and opportunity.
                 </p>
             </div>
 
-            <div class="project-grid">
-                <article class="project-card">
-                    <h3>Project Seva</h3>
-                    <p>Food and clothing support for underserved families and community members in need.</p>
+            <div class="project-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <article class="project-card p-[22px] rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.12)] bg-gradient-to-br from-[rgba(255,255,255,0.95)] to-[rgba(255,248,239,0.88)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-md">
+                    <h3 class="text-[var(--color-accent-dark)] text-[1.05rem] m-0 font-serif leading-[1.3] tracking-[-0.01em]">Project Seva</h3>
+                    <p class="mt-2 m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">Food and clothing support for underserved families and community members in need.</p>
                 </article>
-                <article class="project-card">
-                    <h3>Project Bachpanshala</h3>
-                    <p>Education support for children through learning access, school guidance, and digital literacy.</p>
+                <article class="project-card p-[22px] rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.12)] bg-gradient-to-br from-[rgba(255,255,255,0.95)] to-[rgba(255,248,239,0.88)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-md">
+                    <h3 class="text-[var(--color-accent-dark)] text-[1.05rem] m-0 font-serif leading-[1.3] tracking-[-0.01em]">Project Bachpanshala</h3>
+                    <p class="mt-2 m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">Education support for children through learning access, school guidance, and digital literacy.</p>
                 </article>
-                <article class="project-card">
-                    <h3>Project Jeev</h3>
-                    <p>Animal rescue, protection, and feeding efforts that promote compassionate communities.</p>
+                <article class="project-card p-[22px] rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.12)] bg-gradient-to-br from-[rgba(255,255,255,0.95)] to-[rgba(255,248,239,0.88)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-md">
+                    <h3 class="text-[var(--color-accent-dark)] text-[1.05rem] m-0 font-serif leading-[1.3] tracking-[-0.01em]">Project Jeev</h3>
+                    <p class="mt-2 m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">Animal rescue, protection, and feeding efforts that promote compassionate communities.</p>
                 </article>
-                <article class="project-card">
-                    <h3>Project Udaan</h3>
-                    <p>Women empowerment through skill building, awareness, and pathways to financial independence.</p>
+                <article class="project-card p-[22px] rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.12)] bg-gradient-to-br from-[rgba(255,255,255,0.95)] to-[rgba(255,248,239,0.88)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-md">
+                    <h3 class="text-[var(--color-accent-dark)] text-[1.05rem] m-0 font-serif leading-[1.3] tracking-[-0.01em]">Project Udaan</h3>
+                    <p class="mt-2 m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">Women empowerment through skill building, awareness, and pathways to financial independence.</p>
                 </article>
-                <article class="project-card">
-                    <h3>Project Prakriti</h3>
-                    <p>Environmental conservation initiatives that encourage sustainability and responsible living.</p>
+                <article class="project-card p-[22px] rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.12)] bg-gradient-to-br from-[rgba(255,255,255,0.95)] to-[rgba(255,248,239,0.88)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-md">
+                    <h3 class="text-[var(--color-accent-dark)] text-[1.05rem] m-0 font-serif leading-[1.3] tracking-[-0.01em]">Project Prakriti</h3>
+                    <p class="mt-2 m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">Environmental conservation initiatives that encourage sustainability and responsible living.</p>
                 </article>
-                <article class="project-card">
-                    <h3>Project Vikas</h3>
-                    <p>Employability and skill development programs that help youth prepare for future opportunities.</p>
+                <article class="project-card p-[22px] rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.12)] bg-gradient-to-br from-[rgba(255,255,255,0.95)] to-[rgba(255,248,239,0.88)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-md">
+                    <h3 class="text-[var(--color-accent-dark)] text-[1.05rem] m-0 font-serif leading-[1.3] tracking-[-0.01em]">Project Vikas</h3>
+                    <p class="mt-2 m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">Employability and skill development programs that help youth prepare for future opportunities.</p>
                 </article>
             </div>
         </section>
 
-        <section class="card photo-gallery" aria-label="Impact visuals — volunteers and beneficiaries">
-            <div class="photo-gallery-header">
-                <div class="eyebrow">In the Field</div>
-                <h2>Moments of real impact</h2>
-                <p>Volunteers, beneficiaries, and communities — captured in action.</p>
+        <section class="card photo-gallery p-[clamp(28px,4vw,44px)] grid gap-6 bg-[var(--color-card)] border border-[var(--color-line)] rounded-[var(--radius-card)] shadow-md backdrop-blur-[10px]" aria-label="Impact visuals — volunteers and beneficiaries">
+            <div class="photo-gallery-header flex flex-col gap-2">
+                <div class="eyebrow uppercase tracking-[0.18em] text-[0.75rem] text-[var(--color-accent)] font-sans font-bold">In the Field</div>
+                <h2 class="m-0 font-serif text-[clamp(2rem,3.5vw,3rem)] leading-[1.08] tracking-[-0.02em] font-bold text-[var(--color-text)]">Moments of real impact</h2>
+                <p class="max-w-[52ch] m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">Volunteers, beneficiaries, and communities — captured in action.</p>
             </div>
-            <div class="photo-gallery-grid">
-                <figure class="photo-item photo-item--tall">
-                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80" alt="Volunteers distributing food to families in need">
-                    <figcaption>Food relief — Project Seva</figcaption>
+            <div class="photo-gallery-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-[auto_auto] gap-[14px]">
+                <figure class="photo-item photo-item--tall max-md:row-span-1 md:row-span-2 m-0 rounded-[var(--radius-inner)] overflow-hidden relative border border-[rgba(138,90,43,0.1)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80" alt="Volunteers distributing food to families in need" class="w-full h-full object-cover block min-h-[380px] max-md:min-h-[220px] transition-transform duration-400 ease-out group-hover:scale-[1.03]">
+                    <figcaption class="absolute bottom-0 left-0 right-0 pt-7 px-3.5 pb-3 bg-gradient-to-t from-[rgba(20,14,6,0.65)] to-transparent text-[rgba(255,255,255,0.92)] font-sans text-[0.78rem] font-semibold tracking-[0.03em] uppercase">Food relief — Project Seva</figcaption>
                 </figure>
-                <figure class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=700&q=80" alt="Children engaged in a classroom learning session">
-                    <figcaption>Education access — Project Bachpanshala</figcaption>
+                <figure class="photo-item m-0 rounded-[var(--radius-inner)] overflow-hidden relative border border-[rgba(138,90,43,0.1)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=700&q=80" alt="Children engaged in a classroom learning session" class="w-full h-full object-cover block min-h-[180px] transition-transform duration-400 ease-out group-hover:scale-[1.03]">
+                    <figcaption class="absolute bottom-0 left-0 right-0 pt-7 px-3.5 pb-3 bg-gradient-to-t from-[rgba(20,14,6,0.65)] to-transparent text-[rgba(255,255,255,0.92)] font-sans text-[0.78rem] font-semibold tracking-[0.03em] uppercase">Education access — Project Bachpanshala</figcaption>
                 </figure>
-                <figure class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80" alt="Women in a skills training workshop">
-                    <figcaption>Skills training — Project Udaan</figcaption>
+                <figure class="photo-item m-0 rounded-[var(--radius-inner)] overflow-hidden relative border border-[rgba(138,90,43,0.1)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80" alt="Women in a skills training workshop" class="w-full h-full object-cover block min-h-[180px] transition-transform duration-400 ease-out group-hover:scale-[1.03]">
+                    <figcaption class="absolute bottom-0 left-0 right-0 pt-7 px-3.5 pb-3 bg-gradient-to-t from-[rgba(20,14,6,0.65)] to-transparent text-[rgba(255,255,255,0.92)] font-sans text-[0.78rem] font-semibold tracking-[0.03em] uppercase">Skills training — Project Udaan</figcaption>
                 </figure>
-                <figure class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=700&q=80" alt="Volunteers planting saplings for environmental sustainability">
-                    <figcaption>Tree plantation — Project Prakriti</figcaption>
+                <figure class="photo-item m-0 rounded-[var(--radius-inner)] overflow-hidden relative border border-[rgba(138,90,43,0.1)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=700&q=80" alt="Volunteers planting saplings for environmental sustainability" class="w-full h-full object-cover block min-h-[180px] transition-transform duration-400 ease-out group-hover:scale-[1.03]">
+                    <figcaption class="absolute bottom-0 left-0 right-0 pt-7 px-3.5 pb-3 bg-gradient-to-t from-[rgba(20,14,6,0.65)] to-transparent text-[rgba(255,255,255,0.92)] font-sans text-[0.78rem] font-semibold tracking-[0.03em] uppercase">Tree plantation — Project Prakriti</figcaption>
                 </figure>
-                <figure class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=700&q=80" alt="Animal rescue and feeding by volunteers">
-                    <figcaption>Animal care — Project Jeev</figcaption>
+                <figure class="photo-item m-0 rounded-[var(--radius-inner)] overflow-hidden relative border border-[rgba(138,90,43,0.1)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:scale-[1.02] hover:shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=700&q=80" alt="Animal rescue and feeding by volunteers" class="w-full h-full object-cover block min-h-[180px] transition-transform duration-400 ease-out group-hover:scale-[1.03]">
+                    <figcaption class="absolute bottom-0 left-0 right-0 pt-7 px-3.5 pb-3 bg-gradient-to-t from-[rgba(20,14,6,0.65)] to-transparent text-[rgba(255,255,255,0.92)] font-sans text-[0.78rem] font-semibold tracking-[0.03em] uppercase">Animal care — Project Jeev</figcaption>
                 </figure>
             </div>
         </section>
 
 
         <!-- Mission & Values -->
-        <section class="card mission-section" id="mission">
-            <div class="mission-header">
-                <div class="eyebrow">Mission &amp; Values</div>
-                <h2>Real change through sustained action</h2>
-                <p class="mission-lead">
+        <section class="card mission-section p-[clamp(32px,5vw,56px)] grid gap-9 bg-[var(--color-card)] border border-[var(--color-line)] rounded-[var(--radius-card)] shadow-md backdrop-blur-[10px]" id="mission">
+            <div class="mission-header flex flex-col gap-3 max-w-[72ch]">
+                <div class="eyebrow uppercase tracking-[0.18em] text-[0.75rem] text-[var(--color-accent)] font-sans font-bold">Mission &amp; Values</div>
+                <h2 class="m-0 font-serif text-[clamp(2rem,3.5vw,3rem)] leading-[1.08] tracking-[-0.02em] font-bold text-[var(--color-text)]">Real change through sustained action</h2>
+                <p class="mission-lead max-w-[68ch] m-0 text-[var(--color-muted)] font-sans text-[1.05rem] leading-[1.8]">
                     The projects are built to reduce immediate hardship while creating a stronger foundation for
                     education, self-reliance, community health, and environmental responsibility.
                     When families receive support, children stay engaged in learning, women gain new skills,
@@ -202,192 +205,227 @@
             </div>
 
             <!-- Impact icon pillars -->
-            <div class="mission-pillars" role="list">
-                <div class="mission-pillar" role="listitem">
-                    <div class="pillar-icon pillar-icon--people" aria-hidden="true">👥</div>
-                    <h3>People</h3>
-                    <p>Meals, clothing, education, and livelihood support for families and individuals in need.</p>
+            <div class="mission-pillars grid grid-cols-1 md:grid-cols-3 gap-5" role="list">
+                <div class="mission-pillar flex flex-col items-start gap-2.5 pt-6 pb-6 px-5 rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.1)] bg-[rgba(255,255,255,0.92)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md" role="listitem">
+                    <div class="pillar-icon pillar-icon--people w-[52px] h-[52px] rounded-2xl flex items-center justify-center text-[1.5rem] shrink-0 bg-[rgba(59,130,246,0.1)]" aria-hidden="true">👥</div>
+                    <h3 class="m-0 font-serif text-[1.15rem] leading-[1.3] tracking-[-0.01em] font-bold text-[var(--color-text)]">People</h3>
+                    <p class="m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">Meals, clothing, education, and livelihood support for families and individuals in need.</p>
                 </div>
-                <div class="mission-pillar" role="listitem">
-                    <div class="pillar-icon pillar-icon--animals" aria-hidden="true">🐾</div>
-                    <h3>Animals</h3>
-                    <p>Rescue operations, daily feeding, and long-term care that build compassionate communities.</p>
+                <div class="mission-pillar flex flex-col items-start gap-2.5 pt-6 pb-6 px-5 rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.1)] bg-[rgba(255,255,255,0.92)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md" role="listitem">
+                    <div class="pillar-icon pillar-icon--animals w-[52px] h-[52px] rounded-2xl flex items-center justify-center text-[1.5rem] shrink-0 bg-[rgba(249,115,22,0.1)]" aria-hidden="true">🐾</div>
+                    <h3 class="m-0 font-serif text-[1.15rem] leading-[1.3] tracking-[-0.01em] font-bold text-[var(--color-text)]">Animals</h3>
+                    <p class="m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">Rescue operations, daily feeding, and long-term care that build compassionate communities.</p>
                 </div>
-                <div class="mission-pillar" role="listitem">
-                    <div class="pillar-icon pillar-icon--planet" aria-hidden="true">🌍</div>
-                    <h3>Planet</h3>
-                    <p>Saplings, awareness drives, and sustainable practices to protect the environment we share.</p>
+                <div class="mission-pillar flex flex-col items-start gap-2.5 pt-6 pb-6 px-5 rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.1)] bg-[rgba(255,255,255,0.92)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md" role="listitem">
+                    <div class="pillar-icon pillar-icon--planet w-[52px] h-[52px] rounded-2xl flex items-center justify-center text-[1.5rem] shrink-0 bg-[rgba(34,197,94,0.1)]" aria-hidden="true">🌍</div>
+                    <h3 class="m-0 font-serif text-[1.15rem] leading-[1.3] tracking-[-0.01em] font-bold text-[var(--color-text)]">Planet</h3>
+                    <p class="m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">Saplings, awareness drives, and sustainable practices to protect the environment we share.</p>
                 </div>
-                <div class="mission-pillar" role="listitem">
-                    <div class="pillar-icon pillar-icon--partners" aria-hidden="true">🤝</div>
-                    <h3>Partners</h3>
-                    <p>Volunteers, donors, and corporate supporters who multiply the reach of every initiative.</p>
+                <div class="mission-pillar flex flex-col items-start gap-2.5 pt-6 pb-6 px-5 rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.1)] bg-[rgba(255,255,255,0.92)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md" role="listitem">
+                    <div class="pillar-icon pillar-icon--partners w-[52px] h-[52px] rounded-2xl flex items-center justify-center text-[1.5rem] shrink-0 bg-[rgba(168,85,247,0.1)]" aria-hidden="true">🤝</div>
+                    <h3 class="m-0 font-serif text-[1.15rem] leading-[1.3] tracking-[-0.01em] font-bold text-[var(--color-text)]">Partners</h3>
+                    <p class="m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">Volunteers, donors, and corporate supporters who multiply the reach of every initiative.</p>
                 </div>
             </div>
         </section>
 
         <!-- Testimonial carousel -->
-        <section class="card carousel-section" aria-label="Testimonials from volunteers and beneficiaries">
-            <div class="carousel-header">
+        <section class="card carousel-section p-[clamp(28px,4vw,44px)] grid gap-6 overflow-hidden bg-[var(--color-card)] border border-[var(--color-line)] rounded-[var(--radius-card)] shadow-md backdrop-blur-[10px]" aria-label="Testimonials from volunteers and beneficiaries">
+            <div class="carousel-header flex items-end justify-between gap-4 flex-wrap">
                 <div>
-                    <div class="eyebrow">Voices of Impact</div>
-                    <h2>Heard from those who matter most</h2>
+                    <div class="eyebrow uppercase tracking-[0.18em] text-[0.75rem] text-[var(--color-accent)] font-sans font-bold">Voices of Impact</div>
+                    <h2 class="m-0 font-serif text-[clamp(2rem,3.5vw,3rem)] leading-[1.08] tracking-[-0.02em] font-bold text-[var(--color-text)]">Heard from those who matter most</h2>
                 </div>
-                <div class="carousel-controls" role="group" aria-label="Testimonial navigation">
-                    <button class="carousel-btn" id="carousel-prev" aria-label="Previous testimonial">&#8592;</button>
-                    <button class="carousel-btn" id="carousel-next" aria-label="Next testimonial">&#8594;</button>
-                </div>
-            </div>
-
-            <div class="carousel-track-wrap" aria-live="polite">
-                <div class="carousel-track" id="carousel-track">
-
-                    <blockquote class="carousel-slide" aria-hidden="false">
-                        <div class="carousel-slide-inner">
-                            <div class="carousel-avatar">
-                                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=120&q=80" alt="Portrait of Priya Sharma">
-                            </div>
-                            <div class="carousel-body">
-                                <p class="carousel-quote">"Volunteering with Project Seva changed how I see community. Every meal we served was a reminder that small actions, done consistently, create real change."</p>
-                                <footer class="carousel-attribution">
-                                    <strong>Priya Sharma</strong>
-                                    <span>Volunteer — Project Seva, 2 years</span>
-                                </footer>
-                            </div>
-                        </div>
-                    </blockquote>
-
-                    <blockquote class="carousel-slide" aria-hidden="true">
-                        <div class="carousel-slide-inner">
-                            <div class="carousel-avatar">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Portrait of Arjun Mehta">
-                            </div>
-                            <div class="carousel-body">
-                                <p class="carousel-quote">"The internship at InAmigos gave me hands-on experience I couldn't get anywhere else. I came to give my time — I left with a completely new perspective on purpose-driven work."</p>
-                                <footer class="carousel-attribution">
-                                    <strong>Arjun Mehta</strong>
-                                    <span>Intern — Project Vikas, 2023</span>
-                                </footer>
-                            </div>
-                        </div>
-                    </blockquote>
-
-                    <blockquote class="carousel-slide" aria-hidden="true">
-                        <div class="carousel-slide-inner">
-                            <div class="carousel-avatar">
-                                <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?auto=format&fit=crop&w=120&q=80" alt="Portrait of Meena Patel">
-                            </div>
-                            <div class="carousel-body">
-                                <p class="carousel-quote">"Project Udaan helped me start my own small business. Now I teach other women the same skills. The foundation gave me a platform — I'm building on it every day."</p>
-                                <footer class="carousel-attribution">
-                                    <strong>Meena Patel</strong>
-                                    <span>Participant &amp; mentor — Project Udaan</span>
-                                </footer>
-                            </div>
-                        </div>
-                    </blockquote>
-
-                    <blockquote class="carousel-slide" aria-hidden="true">
-                        <div class="carousel-slide-inner">
-                            <div class="carousel-avatar">
-                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Portrait of Sunita Verma">
-                            </div>
-                            <div class="carousel-body">
-                                <p class="carousel-quote">"Seeing the rescued animals recover and find care — it reminds me why we do this. Project Jeev has made our community more compassionate, one small act at a time."</p>
-                                <footer class="carousel-attribution">
-                                    <strong>Sunita Verma</strong>
-                                    <span>Animal welfare volunteer — Project Jeev</span>
-                                </footer>
-                            </div>
-                        </div>
-                    </blockquote>
-
-                    <blockquote class="carousel-slide" aria-hidden="true">
-                        <div class="carousel-slide-inner">
-                            <div class="carousel-avatar">
-                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80" alt="Portrait of Rajesh Kumar">
-                            </div>
-                            <div class="carousel-body">
-                                <p class="carousel-quote">"Through Project Bachpanshala I learned to read and use a computer. My teacher said I was her best student. I want to become an engineer someday."</p>
-                                <footer class="carousel-attribution">
-                                    <strong>Rajesh Kumar</strong>
-                                    <span>Student — Project Bachpanshala</span>
-                                </footer>
-                            </div>
-                        </div>
-                    </blockquote>
-
+                <div class="carousel-controls flex gap-2 shrink-0" role="group" aria-label="Testimonial navigation">
+                    <button class="carousel-btn w-10 h-10 rounded-full border-[1.5px] border-[var(--color-accent)] bg-transparent text-[var(--color-accent-dark)] text-[1.1rem] cursor-pointer flex items-center justify-center transition-all duration-200 hover:bg-[var(--color-accent)] hover:text-white hover:scale-[1.08] focus-visible:outline-3 focus-visible:outline-[var(--color-accent)] focus-visible:outline-offset-2" id="carousel-prev" aria-label="Previous testimonial">&#8592;</button>
+                    <button class="carousel-btn w-10 h-10 rounded-full border-[1.5px] border-[var(--color-accent)] bg-transparent text-[var(--color-accent-dark)] text-[1.1rem] cursor-pointer flex items-center justify-center transition-all duration-200 hover:bg-[var(--color-accent)] hover:text-white hover:scale-[1.08] focus-visible:outline-3 focus-visible:outline-[var(--color-accent)] focus-visible:outline-offset-2" id="carousel-next" aria-label="Next testimonial">&#8594;</button>
                 </div>
             </div>
 
-            <div class="carousel-dots" role="tablist" aria-label="Testimonial slides" id="carousel-dots"></div>
+            <div class="carousel-track-wrap overflow-hidden rounded-[var(--radius-inner)]" aria-live="polite">
+                <div class="carousel-track flex transition-transform duration-[450ms] ease-out will-change-transform" id="carousel-track">
+
+                    <blockquote class="carousel-slide min-w-full m-0 p-0 shrink-0" aria-hidden="false">
+                        <div class="carousel-slide-inner grid grid-cols-[100px_1fr] max-md:grid-cols-1 gap-7 items-start py-8 px-9 bg-gradient-to-br from-[rgba(255,255,255,0.97)] to-[rgba(255,248,239,0.9)] rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.1)] shadow-sm">
+                            <div class="carousel-avatar w-20 h-20 rounded-full overflow-hidden border-3 border-[var(--color-line)] shadow-sm shrink-0">
+                                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=120&q=80" alt="Portrait of Priya Sharma" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div class="carousel-body flex flex-col gap-4">
+                                <p class="carousel-quote m-0 font-serif text-[clamp(1rem,1.8vw,1.15rem)] leading-[1.75] text-[var(--color-text)] italic relative pl-[22px] before:content-['\201C'] before:absolute before:left-0 before:-top-2 before:text-[2.8rem] before:text-[var(--color-accent)] before:leading-none before:not-italic">"Volunteering with Project Seva changed how I see community. Every meal we served was a reminder that small actions, done consistently, create real change."</p>
+                                <footer class="carousel-attribution pt-3 border-t border-[var(--color-line)]">
+                                    <strong class="block font-sans text-[0.9rem] font-bold text-[var(--color-accent-dark)]">Priya Sharma</strong>
+                                    <span class="block font-sans text-[0.8rem] text-[var(--color-muted)] mt-0.5">Volunteer — Project Seva, 2 years</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </blockquote>
+
+                    <blockquote class="carousel-slide min-w-full m-0 p-0 shrink-0" aria-hidden="true">
+                        <div class="carousel-slide-inner grid grid-cols-[100px_1fr] max-md:grid-cols-1 gap-7 items-start py-8 px-9 bg-gradient-to-br from-[rgba(255,255,255,0.97)] to-[rgba(255,248,239,0.9)] rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.1)] shadow-sm">
+                            <div class="carousel-avatar w-20 h-20 rounded-full overflow-hidden border-3 border-[var(--color-line)] shadow-sm shrink-0">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Portrait of Arjun Mehta" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div class="carousel-body flex flex-col gap-4">
+                                <p class="carousel-quote m-0 font-serif text-[clamp(1rem,1.8vw,1.15rem)] leading-[1.75] text-[var(--color-text)] italic relative pl-[22px] before:content-['\201C'] before:absolute before:left-0 before:-top-2 before:text-[2.8rem] before:text-[var(--color-accent)] before:leading-none before:not-italic">"The internship at InAmigos gave me hands-on experience I couldn't get anywhere else. I came to give my time — I left with a completely new perspective on purpose-driven work."</p>
+                                <footer class="carousel-attribution pt-3 border-t border-[var(--color-line)]">
+                                    <strong class="block font-sans text-[0.9rem] font-bold text-[var(--color-accent-dark)]">Arjun Mehta</strong>
+                                    <span class="block font-sans text-[0.8rem] text-[var(--color-muted)] mt-0.5">Intern — Project Vikas, 2023</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </blockquote>
+
+                    <blockquote class="carousel-slide min-w-full m-0 p-0 shrink-0" aria-hidden="true">
+                        <div class="carousel-slide-inner grid grid-cols-[100px_1fr] max-md:grid-cols-1 gap-7 items-start py-8 px-9 bg-gradient-to-br from-[rgba(255,255,255,0.97)] to-[rgba(255,248,239,0.9)] rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.1)] shadow-sm">
+                            <div class="carousel-avatar w-20 h-20 rounded-full overflow-hidden border-3 border-[var(--color-line)] shadow-sm shrink-0">
+                                <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?auto=format&fit=crop&w=120&q=80" alt="Portrait of Meena Patel" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div class="carousel-body flex flex-col gap-4">
+                                <p class="carousel-quote m-0 font-serif text-[clamp(1rem,1.8vw,1.15rem)] leading-[1.75] text-[var(--color-text)] italic relative pl-[22px] before:content-['\201C'] before:absolute before:left-0 before:-top-2 before:text-[2.8rem] before:text-[var(--color-accent)] before:leading-none before:not-italic">"Project Udaan helped me start my own small business. Now I teach other women the same skills. The foundation gave me a platform — I'm building on it every day."</p>
+                                <footer class="carousel-attribution pt-3 border-t border-[var(--color-line)]">
+                                    <strong class="block font-sans text-[0.9rem] font-bold text-[var(--color-accent-dark)]">Meena Patel</strong>
+                                    <span class="block font-sans text-[0.8rem] text-[var(--color-muted)] mt-0.5">Participant &amp; mentor — Project Udaan</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </blockquote>
+
+                    <blockquote class="carousel-slide min-w-full m-0 p-0 shrink-0" aria-hidden="true">
+                        <div class="carousel-slide-inner grid grid-cols-[100px_1fr] max-md:grid-cols-1 gap-7 items-start py-8 px-9 bg-gradient-to-br from-[rgba(255,255,255,0.97)] to-[rgba(255,248,239,0.9)] rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.1)] shadow-sm">
+                            <div class="carousel-avatar w-20 h-20 rounded-full overflow-hidden border-3 border-[var(--color-line)] shadow-sm shrink-0">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Portrait of Sunita Verma" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div class="carousel-body flex flex-col gap-4">
+                                <p class="carousel-quote m-0 font-serif text-[clamp(1rem,1.8vw,1.15rem)] leading-[1.75] text-[var(--color-text)] italic relative pl-[22px] before:content-['\201C'] before:absolute before:left-0 before:-top-2 before:text-[2.8rem] before:text-[var(--color-accent)] before:leading-none before:not-italic">"Seeing the rescued animals recover and find care — it reminds me why we do this. Project Jeev has made our community more compassionate, one small act at a time."</p>
+                                <footer class="carousel-attribution pt-3 border-t border-[var(--color-line)]">
+                                    <strong class="block font-sans text-[0.9rem] font-bold text-[var(--color-accent-dark)]">Sunita Verma</strong>
+                                    <span class="block font-sans text-[0.8rem] text-[var(--color-muted)] mt-0.5">Animal welfare volunteer — Project Jeev</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </blockquote>
+
+                    <blockquote class="carousel-slide min-w-full m-0 p-0 shrink-0" aria-hidden="true">
+                        <div class="carousel-slide-inner grid grid-cols-[100px_1fr] max-md:grid-cols-1 gap-7 items-start py-8 px-9 bg-gradient-to-br from-[rgba(255,255,255,0.97)] to-[rgba(255,248,239,0.9)] rounded-[var(--radius-inner)] border border-[rgba(138,90,43,0.1)] shadow-sm">
+                            <div class="carousel-avatar w-20 h-20 rounded-full overflow-hidden border-3 border-[var(--color-line)] shadow-sm shrink-0">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&q=80" alt="Portrait of Rajesh Kumar" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div class="carousel-body flex flex-col gap-4">
+                                <p class="carousel-quote m-0 font-serif text-[clamp(1rem,1.8vw,1.15rem)] leading-[1.75] text-[var(--color-text)] italic relative pl-[22px] before:content-['\201C'] before:absolute before:left-0 before:-top-2 before:text-[2.8rem] before:text-[var(--color-accent)] before:leading-none before:not-italic">"Through Project Bachpanshala I learned to read and use a computer. My teacher said I was her best student. I want to become an engineer someday."</p>
+                                <footer class="carousel-attribution pt-3 border-t border-[var(--color-line)]">
+                                    <strong class="block font-sans text-[0.9rem] font-bold text-[var(--color-accent-dark)]">Rajesh Kumar</strong>
+                                    <span class="block font-sans text-[0.8rem] text-[var(--color-muted)] mt-0.5">Student — Project Bachpanshala</span>
+                                </footer>
+                            </div>
+                        </div>
+                    </blockquote>
+
+                </div>
+            </div>
+
+            <div class="carousel-dots flex gap-2 justify-center mt-4" role="tablist" aria-label="Testimonial slides" id="carousel-dots"></div>
         </section>
 
         <!-- Partnerships -->
-        <section class="card partnerships-section" aria-label="Our partners and supporters">
-            <div class="partnerships-header">
-                <div>
-                    <div class="eyebrow">Partners &amp; Supporters</div>
-                    <h2>Together we go further</h2>
-                    <p>We collaborate with corporate partners, government bodies, and NGOs who share our commitment to community impact.</p>
+        <section class="card partnerships-section p-[clamp(28px,4vw,44px)] grid gap-7 bg-[var(--color-card)] border border-[var(--color-line)] rounded-[var(--radius-card)] shadow-md backdrop-blur-[10px]" aria-label="Our partners and supporters">
+            <div class="partnerships-header flex items-end justify-between gap-6 flex-wrap max-md:flex-col max-md:items-start">
+                <div class="flex flex-col gap-2 max-w-[52ch]">
+                    <div class="eyebrow uppercase tracking-[0.18em] text-[0.75rem] text-[var(--color-accent)] font-sans font-bold">Partners &amp; Supporters</div>
+                    <h2 class="m-0 font-serif text-[clamp(2rem,3.5vw,3rem)] leading-[1.08] tracking-[-0.02em] font-bold text-[var(--color-text)]">Together we go further</h2>
+                    <p class="m-0 text-[var(--color-muted)] font-sans text-[0.96rem] leading-[1.8]">We collaborate with corporate partners, government bodies, and NGOs who share our commitment to community impact.</p>
                 </div>
                 <a href="mailto:inamigosfoundation@gmail.com?subject=Partnership%20Enquiry" class="btn secondary">Become a Partner</a>
             </div>
 
-            <div class="partner-logo-grid" aria-label="Partner organisations">
-                <div class="partner-tile">
-                    <div class="partner-logo-wrap" aria-hidden="true">
-                        <span class="partner-abbr">TCS</span>
+            <div class="partner-logo-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-[14px]" aria-label="Partner organisations">
+                <!-- TCS — Wikimedia Commons confirmed URL -->
+                <div class="partner-tile flex flex-col items-center text-center gap-2 pt-5 px-3 pb-4 rounded-[var(--radius-inner)] border border-[var(--color-line)] bg-[rgba(255,255,255,0.7)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md hover:border-[rgba(138,90,43,0.3)]">
+                    <div class="partner-logo-wrap w-14 h-14 rounded-xl bg-white border border-[var(--color-line)] flex items-center justify-center overflow-hidden p-1.5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TCS_SIPCOT_Building.jpg/120px-TCS_SIPCOT_Building.jpg"
+                              alt="Tata Consultancy Services" class="w-full h-full object-contain block"
+                             loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <span class="partner-abbr font-serif font-bold text-[0.85rem] text-[var(--color-accent-dark)] tracking-[-0.01em] flex items-center justify-center w-full h-full" style="display:none">TCS</span>
                     </div>
-                    <span class="partner-name">Tata Consultancy Services</span>
-                    <span class="partner-type">CSR Partner</span>
+                    <span class="partner-name font-sans text-[0.78rem] font-bold text-[var(--text)] leading-[1.3]">Tata Consultancy Services</span>
+                    <span class="partner-type font-sans text-[0.7rem] text-[var(--color-muted)] uppercase tracking-[0.06em]">CSR Partner</span>
                 </div>
-                <div class="partner-tile">
-                    <div class="partner-logo-wrap" aria-hidden="true">
-                        <span class="partner-abbr">NITI</span>
+
+                <!-- NITI Aayog — Wikipedia REST API confirmed URL -->
+                <div class="partner-tile flex flex-col items-center text-center gap-2 pt-5 px-3 pb-4 rounded-[var(--radius-inner)] border border-[var(--color-line)] bg-[rgba(255,255,255,0.7)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md hover:border-[rgba(138,90,43,0.3)]">
+                    <div class="partner-logo-wrap w-14 h-14 rounded-xl bg-white border border-[var(--color-line)] flex items-center justify-center overflow-hidden p-1.5">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/NITI_Aayog_logo.svg/330px-NITI_Aayog_logo.svg.png"
+                              alt="NITI Aayog" class="w-full h-full object-contain block"
+                             loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <span class="partner-abbr font-serif font-bold text-[0.85rem] text-[var(--color-accent-dark)] tracking-[-0.01em] flex items-center justify-center w-full h-full" style="display:none">NITI</span>
                     </div>
-                    <span class="partner-name">NITI Aayog</span>
-                    <span class="partner-type">Government Body</span>
+                    <span class="partner-name font-sans text-[0.78rem] font-bold text-[var(--text)] leading-[1.3]">NITI Aayog</span>
+                    <span class="partner-type font-sans text-[0.7rem] text-[var(--color-muted)] uppercase tracking-[0.06em]">Government Body</span>
                 </div>
-                <div class="partner-tile">
-                    <div class="partner-logo-wrap" aria-hidden="true">
-                        <span class="partner-abbr">GFI</span>
+
+                <!-- Give Foundation India — giveindia.org favicon via Google S2 -->
+                <div class="partner-tile flex flex-col items-center text-center gap-2 pt-5 px-3 pb-4 rounded-[var(--radius-inner)] border border-[var(--color-line)] bg-[rgba(255,255,255,0.7)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md hover:border-[rgba(138,90,43,0.3)]">
+                    <div class="partner-logo-wrap partner-logo-wrap--padded w-14 h-14 rounded-xl bg-white border border-[var(--color-line)] flex items-center justify-center overflow-hidden p-2.5">
+                        <img src="https://www.google.com/s2/favicons?domain=give.do&sz=128"
+                              alt="Give Foundation India" class="w-full h-full object-contain block"
+                             loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <span class="partner-abbr font-serif font-bold text-[0.85rem] text-[var(--color-accent-dark)] tracking-[-0.01em] flex items-center justify-center w-full h-full" style="display:none">GFI</span>
                     </div>
-                    <span class="partner-name">Give Foundation India</span>
-                    <span class="partner-type">NGO Partner</span>
+                    <span class="partner-name font-sans text-[0.78rem] font-bold text-[var(--text)] leading-[1.3]">Give Foundation India</span>
+                    <span class="partner-type font-sans text-[0.7rem] text-[var(--color-muted)] uppercase tracking-[0.06em]">NGO Partner</span>
                 </div>
-                <div class="partner-tile">
-                    <div class="partner-logo-wrap" aria-hidden="true">
-                        <span class="partner-abbr">CG</span>
+
+                <!-- Govt. of Chhattisgarh — Wikimedia REST API confirmed URL -->
+                <div class="partner-tile flex flex-col items-center text-center gap-2 pt-5 px-3 pb-4 rounded-[var(--radius-inner)] border border-[var(--color-line)] bg-[rgba(255,255,255,0.7)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md hover:border-[rgba(138,90,43,0.3)]">
+                    <div class="partner-logo-wrap w-14 h-14 rounded-xl bg-white border border-[var(--color-line)] flex items-center justify-center overflow-hidden p-1.5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Coat_of_arms_of_Chhattisgarh.svg/330px-Coat_of_arms_of_Chhattisgarh.svg.png"
+                              alt="Government of Chhattisgarh" class="w-full h-full object-contain block"
+                             loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <span class="partner-abbr font-serif font-bold text-[0.85rem] text-[var(--color-accent-dark)] tracking-[-0.01em] flex items-center justify-center w-full h-full" style="display:none">CG</span>
                     </div>
-                    <span class="partner-name">Govt. of Chhattisgarh</span>
-                    <span class="partner-type">Government Partner</span>
+                    <span class="partner-name font-sans text-[0.78rem] font-bold text-[var(--text)] leading-[1.3]">Govt. of Chhattisgarh</span>
+                    <span class="partner-type font-sans text-[0.7rem] text-[var(--color-muted)] uppercase tracking-[0.06em]">Government Partner</span>
                 </div>
-                <div class="partner-tile">
-                    <div class="partner-logo-wrap" aria-hidden="true">
-                        <span class="partner-abbr">INF</span>
+
+                <!-- India NGO Forum — Emblem of India (public domain) -->
+                <div class="partner-tile flex flex-col items-center text-center gap-2 pt-5 px-3 pb-4 rounded-[var(--radius-inner)] border border-[var(--color-line)] bg-[rgba(255,255,255,0.7)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md hover:border-[rgba(138,90,43,0.3)]">
+                    <div class="partner-logo-wrap w-14 h-14 rounded-xl bg-white border border-[var(--color-line)] flex items-center justify-center overflow-hidden p-1.5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/200px-Emblem_of_India.svg.png"
+                              alt="India NGO Forum" class="w-full h-full object-contain block"
+                             loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <span class="partner-abbr font-serif font-bold text-[0.85rem] text-[var(--color-accent-dark)] tracking-[-0.01em] flex items-center justify-center w-full h-full" style="display:none">INF</span>
                     </div>
-                    <span class="partner-name">India NGO Forum</span>
-                    <span class="partner-type">Network Member</span>
+                    <span class="partner-name font-sans text-[0.78rem] font-bold text-[var(--text)] leading-[1.3]">India NGO Forum</span>
+                    <span class="partner-type font-sans text-[0.7rem] text-[var(--color-muted)] uppercase tracking-[0.06em]">Network Member</span>
                 </div>
-                <div class="partner-tile">
-                    <div class="partner-logo-wrap" aria-hidden="true">
-                        <span class="partner-abbr">ISO</span>
+
+                <!-- ISO — Wikipedia REST API confirmed URL -->
+                <div class="partner-tile flex flex-col items-center text-center gap-2 pt-5 px-3 pb-4 rounded-[var(--radius-inner)] border border-[var(--color-line)] bg-[rgba(255,255,255,0.7)] shadow-sm transition-all duration-300 ease-out hover:-translate-y-[3px] hover:shadow-md hover:border-[rgba(138,90,43,0.3)]">
+                    <div class="partner-logo-wrap w-14 h-14 rounded-xl bg-white border border-[var(--color-line)] flex items-center justify-center overflow-hidden p-1.5">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ISO_Logo_%28Red_square%29.svg/330px-ISO_Logo_%28Red_square%29.svg.png"
+                              alt="ISO 9001:2015" class="w-full h-full object-contain block"
+                             loading="lazy"
+                             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                        <span class="partner-abbr font-serif font-bold text-[0.85rem] text-[var(--color-accent-dark)] tracking-[-0.01em] flex items-center justify-center w-full h-full" style="display:none">ISO</span>
                     </div>
-                    <span class="partner-name">ISO 9001:2015 Certified</span>
-                    <span class="partner-type">Quality Standard</span>
+                    <span class="partner-name font-sans text-[0.78rem] font-bold text-[var(--text)] leading-[1.3]">ISO 9001:2015 Certified</span>
+                    <span class="partner-type font-sans text-[0.7rem] text-[var(--color-muted)] uppercase tracking-[0.06em]">Quality Standard</span>
                 </div>
             </div>
 
-            <p class="partner-disclaimer">Partner logos shown for illustrative purposes. Replace with official assets once partnership agreements are formalised.</p>
+            <p class="partner-disclaimer font-sans text-[0.75rem] text-[var(--color-muted)] italic text-center border-t border-[var(--color-line)] pt-4 m-0">Partner logos shown for illustrative purposes. Replace with official assets once partnership agreements are formalised.</p>
         </section>
 
         <!-- Social feed -->
-        <section class="card social-feed-section" aria-label="Latest from Instagram">
+        <section class="card social-feed-section" aria-labelledby="social-feed-heading" aria-label="Latest from Instagram">
             <div class="social-feed-header">
                 <div>
                     <div class="eyebrow">Latest from Instagram</div>
-                    <h2>Follow our work in real time</h2>
+                    <h2 id="social-feed-heading">Follow our work in real time</h2>
                     <p>Stay updated as our volunteers and teams share moments from the field every week.</p>
                 </div>
                 <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="btn primary">
@@ -398,7 +436,7 @@
             <div class="social-feed-grid" aria-label="Recent Instagram posts">
                 <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="social-post" aria-label="Food distribution drive — Project Seva">
                     <div class="social-post-img">
-                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=400&q=75" alt="Volunteers distributing food parcels during Project Seva drive" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=400&q=75" alt="Volunteers distributing food parcels during Project Seva drive" loading="lazy" decoding="async">
                         <div class="social-post-overlay">
                             <span class="social-post-likes" aria-label="247 likes">❤ 247</span>
                         </div>
@@ -407,7 +445,7 @@
                 </a>
                 <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="social-post" aria-label="Children's learning session — Project Bachpanshala">
                     <div class="social-post-img">
-                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=400&q=75" alt="Children participating in a digital literacy session" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=400&q=75" alt="Children participating in a digital literacy session" loading="lazy" decoding="async">
                         <div class="social-post-overlay">
                             <span class="social-post-likes" aria-label="189 likes">❤ 189</span>
                         </div>
@@ -416,7 +454,7 @@
                 </a>
                 <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="social-post" aria-label="Tree plantation drive — Project Prakriti">
                     <div class="social-post-img">
-                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=75" alt="Volunteers planting saplings during a Prakriti drive" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=75" alt="Volunteers planting saplings during a Prakriti drive" loading="lazy" decoding="async">
                         <div class="social-post-overlay">
                             <span class="social-post-likes" aria-label="312 likes">❤ 312</span>
                         </div>
@@ -425,7 +463,7 @@
                 </a>
                 <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="social-post" aria-label="Women's skills workshop — Project Udaan">
                     <div class="social-post-img">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=400&q=75" alt="Women in a tailoring and skills workshop" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=400&q=75" alt="Women in a tailoring and skills workshop" loading="lazy" decoding="async">
                         <div class="social-post-overlay">
                             <span class="social-post-likes" aria-label="274 likes">❤ 274</span>
                         </div>
@@ -434,7 +472,7 @@
                 </a>
                 <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="social-post" aria-label="Animal rescue — Project Jeev">
                     <div class="social-post-img">
-                        <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=400&q=75" alt="Volunteer caring for a rescued animal" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=400&q=75" alt="Volunteer caring for a rescued animal" loading="lazy" decoding="async">
                         <div class="social-post-overlay">
                             <span class="social-post-likes" aria-label="401 likes">❤ 401</span>
                         </div>
@@ -443,7 +481,7 @@
                 </a>
                 <a href="https://www.instagram.com/inamigos" target="_blank" rel="noreferrer" class="social-post" aria-label="Youth skill training — Project Vikas">
                     <div class="social-post-img">
-                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=400&q=75" alt="Young participants in a skill development session" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=400&q=75" alt="Young participants in a skill development session" loading="lazy" decoding="async">
                         <div class="social-post-overlay">
                             <span class="social-post-likes" aria-label="156 likes">❤ 156</span>
                         </div>
@@ -459,20 +497,20 @@
             </p>
         </section>
 
-        <section class="card impact-band">
-            <h2>Join us in making a difference</h2>
+        <section class="card impact-band bg-gradient-to-br from-[var(--color-green-dark)] to-[#1b432b] text-white p-[clamp(32px,5vw,56px)] rounded-[var(--radius-card)] flex flex-col items-center text-center gap-4 relative overflow-hidden border border-transparent shadow-[0_10px_30px_rgba(41,102,66,0.25)] mt-8">
+            <h2 class="m-0 font-serif text-[clamp(2rem,4vw,3.2rem)] leading-[1.05] tracking-[-0.02em] font-bold text-white text-balance">Join us in making a difference</h2>
             <p>
                 Volunteer, support, or partner with us to help more communities access care, dignity, and opportunity.
                 Every contribution strengthens the reach and sustainability of our programs.
             </p>
-            <div class="impact-band-actions">
-                <a href="volunteer.html#donate" class="btn btn-band-donate">
+            <div class="impact-band-actions flex flex-wrap justify-center gap-3 relative mt-2 max-sm:flex-col max-sm:w-full">
+                <a href="https://rzp.io/l/kWQ87HP" class="btn btn-band-donate bg-white text-[var(--color-green-dark)] text-[1rem] min-h-[52px] px-7 gap-2 shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:bg-[rgba(255,255,255,0.9)] hover:-translate-y-[2px] hover:shadow-[0_8px_28px_rgba(0,0,0,0.25)] max-sm:w-full max-sm:justify-center">
                     <span aria-hidden="true">❤️</span> Donate Now
                 </a>
-                <a href="volunteer.html" class="btn btn-band-volunteer">
+                <a href="volunteer.html" class="btn btn-band-volunteer bg-[rgba(255,255,255,0.15)] text-white border-[1.5px] border-[rgba(255,255,255,0.5)] text-[1rem] min-h-[52px] px-7 gap-2 backdrop-blur-[4px] hover:bg-[rgba(255,255,255,0.25)] hover:border-[rgba(255,255,255,0.8)] hover:-translate-y-[2px] max-sm:w-full max-sm:justify-center">
                     <span aria-hidden="true">🙌</span> Become a Volunteer
                 </a>
-                <a href="initiatives.html" class="btn btn-band-learn">
+                <a href="initiatives.html" class="btn btn-band-learn bg-transparent text-[rgba(255,255,255,0.8)] border-[1.5px] border-[rgba(255,255,255,0.25)] text-[0.92rem] min-h-[52px] px-6 gap-2 hover:text-white hover:border-[rgba(255,255,255,0.55)] hover:-translate-y-[2px] max-sm:w-full max-sm:justify-center">
                     <span aria-hidden="true">📖</span> See All Projects
                 </a>
             </div>

@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f4efe6;
+  --color-card: rgba(255, 255, 255, 0.88);
+  --color-text: #1f2937;
+  --color-muted: #5b6472;
+  --color-accent: #8a5a2b;
+  --color-accent-dark: #634021;
+  --color-accent-pale: rgba(138, 90, 43, 0.08);
+  --color-green: #296642;
+  --color-green-dark: #1e4a31;
+  --color-line: rgba(99, 64, 33, 0.14);
+
+  --font-serif: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+  --font-sans: "Arial", system-ui, sans-serif;
+
+  --shadow-sm: 0 4px 16px rgba(72, 48, 25, 0.08);
+  --shadow-md: 0 12px 36px rgba(72, 48, 25, 0.11);
+  --shadow-lg: 0 28px 64px rgba(72, 48, 25, 0.13);
+
+  --radius-card: 28px;
+  --radius-inner: 22px;
+  --radius-pill: 999px;
+}

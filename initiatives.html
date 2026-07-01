@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Initiatives - InAmigos Foundation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="initiatives.css">
 </head>
 <body data-page="initiatives">
     <div id="site-header"></div>
@@ -46,11 +47,11 @@
             </div>
         </section>
 
-        <section class="card project-showcase">
+        <section class="card project-showcase" id="projects" aria-labelledby="projects-heading">
             <div class="section-heading">
                 <div>
                     <div class="eyebrow">Our Projects</div>
-                    <h2>Six initiatives addressing critical needs</h2>
+                    <h2 id="projects-heading">Six initiatives addressing critical needs</h2>
                 </div>
                 <p>
                     Each program addresses immediate challenges while building pathways for long-term community
@@ -63,7 +64,7 @@
                 <!-- Seva -->
                 <article class="initiative-card">
                     <div class="initiative-card-photo">
-                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=700&q=80" alt="Volunteers distributing food and supplies">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=700&q=80" alt="Volunteers distributing food and supplies" loading="lazy" decoding="async">
                         <span class="initiative-icon" aria-hidden="true">🍱</span>
                     </div>
                     <div class="initiative-card-body">
@@ -88,12 +89,12 @@
                         </div>
                         <a href="volunteer.html" class="btn initiative-cta">Support this project</a>
                         <div class="case-study">
-                            <button class="case-study-toggle" aria-expanded="false" aria-controls="case-seva">
+                            <button type="button" class="case-study-toggle" aria-expanded="false" aria-controls="case-seva">
                                 <span class="case-study-label">✦ Success Story</span>
                                 <span class="case-study-chevron" aria-hidden="true">▾</span>
                             </button>
                             <div class="case-study-body" id="case-seva" hidden>
-                                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=70" alt="Rajan receiving food support from Project Seva volunteers" class="case-study-photo">
+                                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=70" alt="Rajan receiving food support from Project Seva volunteers" class="case-study-photo" loading="lazy" decoding="async">
                                 <p class="case-study-text"><strong>Meet Rajan.</strong> After losing his daily-wage work during a local economic downturn, Rajan struggled to feed his family of four. Project Seva volunteers began delivering weekly food parcels and connecting him to job placement resources. Within three months, Rajan found stable employment — and now volunteers at Seva distributions himself every Sunday.</p>
                             </div>
                         </div>
@@ -103,7 +104,7 @@
                 <!-- Bachpanshala -->
                 <article class="initiative-card">
                     <div class="initiative-card-photo">
-                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=700&q=80" alt="Children learning together in a classroom">
+                        <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=700&q=80" alt="Children learning together in a classroom" loading="lazy" decoding="async">
                         <span class="initiative-icon" aria-hidden="true">📚</span>
                     </div>
                     <div class="initiative-card-body">
@@ -112,11 +113,11 @@
                         <p>Education access, school guidance, and digital literacy support to help children build a stronger future.</p>
                         <div class="initiative-stats">
                             <div class="initiative-stat">
-                                <strong>3,200+</strong>
+                                <strong>1,000+</strong>
                                 <span>Children reached</span>
                             </div>
                             <div class="initiative-stat">
-                                <strong>40+</strong>
+                                <strong>Active</strong>
                                 <span>Learning centres</span>
                             </div>
                         </div>
@@ -128,12 +129,12 @@
                         </div>
                         <a href="volunteer.html" class="btn initiative-cta">Support this project</a>
                         <div class="case-study">
-                            <button class="case-study-toggle" aria-expanded="false" aria-controls="case-bachpanshala">
+                            <button type="button" class="case-study-toggle" aria-expanded="false" aria-controls="case-bachpanshala">
                                 <span class="case-study-label">✦ Success Story</span>
                                 <span class="case-study-chevron" aria-hidden="true">▾</span>
                             </button>
                             <div class="case-study-body" id="case-bachpanshala" hidden>
-                                <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=600&q=70" alt="Rajesh studying at a Bachpanshala learning centre" class="case-study-photo">
+                                <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=600&q=70" alt="Rajesh studying at a Bachpanshala learning centre" class="case-study-photo" loading="lazy" decoding="async">
                                 <p class="case-study-text"><strong>Meet Rajesh.</strong> At 10, Rajesh had never attended school — his family couldn't afford it. Project Bachpanshala enrolled him in a local learning centre where he received free materials, tutoring, and digital literacy sessions. Two years later, Rajesh passed his Class 5 exams and told his teacher he wants to become an engineer.</p>
                             </div>
                         </div>
@@ -143,7 +144,7 @@
                 <!-- Jeev -->
                 <article class="initiative-card">
                     <div class="initiative-card-photo">
-                        <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=700&q=80" alt="Volunteer caring for rescued animals">
+                        <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=700&q=80" alt="Volunteer caring for rescued animals" loading="lazy" decoding="async">
                         <span class="initiative-icon" aria-hidden="true">🐾</span>
                     </div>
                     <div class="initiative-card-body">
@@ -168,12 +169,12 @@
                         </div>
                         <a href="volunteer.html" class="btn initiative-cta">Support this project</a>
                         <div class="case-study">
-                            <button class="case-study-toggle" aria-expanded="false" aria-controls="case-jeev">
+                            <button type="button" class="case-study-toggle" aria-expanded="false" aria-controls="case-jeev">
                                 <span class="case-study-label">✦ Success Story</span>
                                 <span class="case-study-chevron" aria-hidden="true">▾</span>
                             </button>
                             <div class="case-study-body" id="case-jeev" hidden>
-                                <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=600&q=70" alt="Rescued dog recovering under volunteer care" class="case-study-photo">
+                                <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=600&q=70" alt="Rescued dog recovering under volunteer care" class="case-study-photo" loading="lazy" decoding="async">
                                 <p class="case-study-text"><strong>Meet Tommy.</strong> Found injured on a roadside in Raipur, Tommy was brought to Project Jeev volunteers who provided emergency treatment, steady feeding, and rehabilitation over six weeks. He was successfully adopted by a local family and sparked a wider community awareness drive about stray animal welfare in the neighbourhood.</p>
                             </div>
                         </div>
@@ -183,7 +184,7 @@
                 <!-- Udaan -->
                 <article class="initiative-card">
                     <div class="initiative-card-photo">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80" alt="Women participating in a skills training workshop">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80" alt="Women participating in a skills training workshop" loading="lazy" decoding="async">
                         <span class="initiative-icon" aria-hidden="true">🌸</span>
                     </div>
                     <div class="initiative-card-body">
@@ -192,12 +193,12 @@
                         <p>Women empowerment through skills training, awareness programmes, and pathways to financial independence.</p>
                         <div class="initiative-stats">
                             <div class="initiative-stat">
-                                <strong>1,800+</strong>
-                                <span>Women trained</span>
+                                <strong>900+</strong>
+                                <span>Women empowered</span>
                             </div>
                             <div class="initiative-stat">
-                                <strong>25+</strong>
-                                <span>Workshops held</span>
+                                <strong>Active</strong>
+                                <span>Workshops &amp; drives</span>
                             </div>
                         </div>
                         <div class="initiative-progress" aria-label="Program capacity: 70% reached">
@@ -208,12 +209,12 @@
                         </div>
                         <a href="volunteer.html" class="btn initiative-cta">Support this project</a>
                         <div class="case-study">
-                            <button class="case-study-toggle" aria-expanded="false" aria-controls="case-udaan">
+                            <button type="button" class="case-study-toggle" aria-expanded="false" aria-controls="case-udaan">
                                 <span class="case-study-label">✦ Success Story</span>
                                 <span class="case-study-chevron" aria-hidden="true">▾</span>
                             </button>
                             <div class="case-study-body" id="case-udaan" hidden>
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=70" alt="Meena at her tailoring workshop" class="case-study-photo">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=70" alt="Meena at her tailoring workshop" class="case-study-photo" loading="lazy" decoding="async">
                                 <p class="case-study-text"><strong>Meet Meena.</strong> A homemaker with no formal income, Meena joined Project Udaan's tailoring and entrepreneurship workshop in 2022. Within eight months she had launched her own small tailoring business from home, earning a steady income for her family. Today, Meena runs a mentoring group for 12 other women in her village going through the same programme.</p>
                             </div>
                         </div>
@@ -223,7 +224,7 @@
                 <!-- Prakriti -->
                 <article class="initiative-card">
                     <div class="initiative-card-photo">
-                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=700&q=80" alt="Volunteers planting saplings in a community drive">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=700&q=80" alt="Volunteers planting saplings in a community drive" loading="lazy" decoding="async">
                         <span class="initiative-icon" aria-hidden="true">🌱</span>
                     </div>
                     <div class="initiative-card-body">
@@ -232,12 +233,12 @@
                         <p>Environmental conservation, tree plantation drives, and sustainability awareness campaigns for communities.</p>
                         <div class="initiative-stats">
                             <div class="initiative-stat">
-                                <strong>15,000+</strong>
-                                <span>Saplings planted</span>
+                                <strong>10,000+</strong>
+                                <span>Trees planted</span>
                             </div>
                             <div class="initiative-stat">
-                                <strong>30+</strong>
-                                <span>Drives conducted</span>
+                                <strong>Active</strong>
+                                <span>Plantation drives</span>
                             </div>
                         </div>
                         <div class="initiative-progress" aria-label="Program capacity: 82% reached">
@@ -248,12 +249,12 @@
                         </div>
                         <a href="volunteer.html" class="btn initiative-cta">Support this project</a>
                         <div class="case-study">
-                            <button class="case-study-toggle" aria-expanded="false" aria-controls="case-prakriti">
+                            <button type="button" class="case-study-toggle" aria-expanded="false" aria-controls="case-prakriti">
                                 <span class="case-study-label">✦ Success Story</span>
                                 <span class="case-study-chevron" aria-hidden="true">▾</span>
                             </button>
                             <div class="case-study-body" id="case-prakriti" hidden>
-                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=70" alt="Children and volunteers planting saplings during a Prakriti drive" class="case-study-photo">
+                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=70" alt="Children and volunteers planting saplings during a Prakriti drive" class="case-study-photo" loading="lazy" decoding="async">
                                 <p class="case-study-text"><strong>The Nandanvan Drive.</strong> In June 2023, Project Prakriti organised a single-day plantation drive in the Nandanvan area of Raipur, mobilising 300 volunteers — including 80 school students. Over 2,000 saplings were planted in one afternoon. Local forest department officials praised the initiative and partnered with InAmigos for a follow-up drive three months later.</p>
                             </div>
                         </div>
@@ -263,21 +264,21 @@
                 <!-- Vikas -->
                 <article class="initiative-card">
                     <div class="initiative-card-photo">
-                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=80" alt="Young people in a skill development training session">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=80" alt="Young people in a skill development training session" loading="lazy" decoding="async">
                         <span class="initiative-icon" aria-hidden="true">🚀</span>
                     </div>
                     <div class="initiative-card-body">
                         <div class="eyebrow">Skill Development</div>
                         <h3>Project Vikas</h3>
-                        <p>Employability, internship, and skill development initiatives to help youth prepare for future opportunities.</p>
+                        <p>Employability, internship, and skill development initiatives across data operations, finance, research, content writing, digital marketing, and social work.</p>
                         <div class="initiative-stats">
                             <div class="initiative-stat">
-                                <strong>2,400+</strong>
-                                <span>Youth enrolled</span>
+                                <strong>30,000+</strong>
+                                <span>Interns trained</span>
                             </div>
                             <div class="initiative-stat">
-                                <strong>85%</strong>
-                                <span>Placement rate</span>
+                                <strong>4 yrs</strong>
+                                <span>Programme running</span>
                             </div>
                         </div>
                         <div class="initiative-progress" aria-label="Program capacity: 60% reached">
@@ -288,12 +289,12 @@
                         </div>
                         <a href="volunteer.html" class="btn initiative-cta">Support this project</a>
                         <div class="case-study">
-                            <button class="case-study-toggle" aria-expanded="false" aria-controls="case-vikas">
+                            <button type="button" class="case-study-toggle" aria-expanded="false" aria-controls="case-vikas">
                                 <span class="case-study-label">✦ Success Story</span>
                                 <span class="case-study-chevron" aria-hidden="true">▾</span>
                             </button>
                             <div class="case-study-body" id="case-vikas" hidden>
-                                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=70" alt="Anil presenting at a skill development workshop" class="case-study-photo">
+                                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=70" alt="Anil presenting at a skill development workshop" class="case-study-photo" loading="lazy" decoding="async">
                                 <p class="case-study-text"><strong>Meet Anil.</strong> A school dropout at 16, Anil enrolled in Project Vikas's digital skills and employability programme with no prior computer experience. After completing the 3-month course he was placed as a data entry operator at a local firm. Within a year, Anil was promoted to junior analyst — and returned to InAmigos to mentor the next batch of students.</p>
                             </div>
                         </div>

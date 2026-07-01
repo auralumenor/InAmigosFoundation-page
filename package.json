@@ -1,0 +1,17 @@
+{
+  "name": "work_1",
+  "version": "1.0.0",
+  "description": "Static website for **InAmigos Foundation**, a Section 8 registered non-profit based in Chhattisgarh, India. Founded on September 23, 2020 by Mr. Govind Shukla, the foundation works across food relief, education, women empowerment, animal welfare, environmental sustainability, and skill development.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.2",
+    "tailwindcss": "^4.3.2"
+  }
+}
