@@ -248,6 +248,31 @@ const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   onScroll(); // run once on load in case page is already scrolled
 })();
 
+/* ------------------------------------------------------------
+   2.5 Mobile Menu Toggle
+   Toggles the .open class on the mobile nav and updates aria-expanded.
+   ------------------------------------------------------------ */
+(function initMobileMenu() {
+  const toggleBtn = document.querySelector('.mobile-menu-toggle');
+  const navLinks = document.querySelector('.site-nav-links');
+
+  if (toggleBtn && navLinks) {
+    toggleBtn.addEventListener('click', function() {
+      const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+      toggleBtn.setAttribute('aria-expanded', !isExpanded);
+      navLinks.classList.toggle('open');
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        navLinks.classList.remove('open');
+      });
+    });
+  }
+})();
+
 
 /* ------------------------------------------------------------
    3. Hero parallax
